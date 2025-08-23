@@ -1,0 +1,867 @@
+2025-06-30 20:02:34,112 - INFO - ������֤��: phone=12345678921, code=580929
+2025-06-30 20:02:35,518 - INFO - SELECT DATABASE()
+2025-06-30 20:02:35,518 - INFO - [raw sql] {}
+2025-06-30 20:02:35,519 - INFO - SELECT @@sql_mode
+2025-06-30 20:02:35,519 - INFO - [raw sql] {}
+2025-06-30 20:02:35,520 - INFO - SELECT @@lower_case_table_names
+2025-06-30 20:02:35,520 - INFO - [raw sql] {}
+2025-06-30 20:02:35,522 - INFO - BEGIN (implicit)
+2025-06-30 20:02:35,528 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.phone = %(phone_1)s
+2025-06-30 20:02:35,528 - INFO - [generated in 0.00078s] {'phone_1': '12345678921'}
+2025-06-30 20:02:35,565 - INFO - ROLLBACK
+2025-06-30 20:04:57,087 - INFO - ������֤��: phone=13676542345, code=994114
+2025-06-30 20:04:58,900 - INFO - SELECT DATABASE()
+2025-06-30 20:04:58,900 - INFO - [raw sql] {}
+2025-06-30 20:04:58,901 - INFO - SELECT @@sql_mode
+2025-06-30 20:04:58,902 - INFO - [raw sql] {}
+2025-06-30 20:04:58,903 - INFO - SELECT @@lower_case_table_names
+2025-06-30 20:04:58,903 - INFO - [raw sql] {}
+2025-06-30 20:04:58,905 - INFO - BEGIN (implicit)
+2025-06-30 20:04:58,914 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.phone = %(phone_1)s
+2025-06-30 20:04:58,914 - INFO - [generated in 0.00056s] {'phone_1': '13676542345'}
+2025-06-30 20:04:58,918 - INFO - ROLLBACK
+2025-06-30 20:05:05,083 - INFO - BEGIN (implicit)
+2025-06-30 20:05:05,087 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:05:05,087 - INFO - [generated in 0.00082s] {'id_1': 13}
+2025-06-30 20:05:05,093 - INFO - ROLLBACK
+2025-06-30 20:05:05,110 - INFO - �û� 7 ���ӵ�Ŀ�� 13
+2025-06-30 20:05:56,953 - INFO - �û� 7 �Ͽ�����
+2025-06-30 20:05:57,963 - INFO - BEGIN (implicit)
+2025-06-30 20:05:57,964 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:05:57,964 - INFO - [cached since 52.88s ago] {'id_1': 13}
+2025-06-30 20:05:57,970 - INFO - ROLLBACK
+2025-06-30 20:05:57,998 - INFO - �û� 7 ���ӵ�Ŀ�� 13
+2025-06-30 20:07:29,384 - INFO - �û� 7 �Ͽ�����
+2025-06-30 20:08:30,211 - INFO - �û� 7 ���ӵ�Ŀ�� 13
+2025-06-30 20:08:52,443 - INFO - �û� 7 �Ͽ�����
+2025-06-30 20:08:55,442 - INFO - BEGIN (implicit)
+2025-06-30 20:08:55,515 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:08:55,516 - INFO - [cached since 230.4s ago] {'id_1': 13}
+2025-06-30 20:08:55,546 - INFO - ROLLBACK
+2025-06-30 20:08:55,608 - INFO - �û� 7 ���ӵ�Ŀ�� 13
+2025-06-30 20:10:04,125 - INFO - �յ���Ϣ from 7 to 13: {'id': 1751285404090, 'text': '000', 'time': '2025-06-30T12:10:04.090Z', 'from': 7, 'to': 13, 'fromUsername': '����', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-30 20:10:04,125 - INFO - Ŀ���û� 13 ���ߣ���Ϣ���洢Ϊ������Ϣ
+2025-06-30 20:10:04,139 - INFO - BEGIN (implicit)
+2025-06-30 20:10:04,143 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:10:04,144 - INFO - [cached since 299.1s ago] {'id_1': 13}
+2025-06-30 20:10:09,371 - INFO - �û� 7 �Ͽ�����
+2025-06-30 20:10:09,413 - INFO - ROLLBACK
+2025-06-30 20:10:12,518 - INFO - BEGIN (implicit)
+2025-06-30 20:10:12,522 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:10:12,522 - INFO - [cached since 307.4s ago] {'id_1': 13}
+2025-06-30 20:10:12,542 - INFO - ROLLBACK
+2025-06-30 20:10:12,617 - INFO - �û� 7 ���ӵ�Ŀ�� 13
+2025-06-30 20:10:38,819 - INFO - BEGIN (implicit)
+2025-06-30 20:10:38,821 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:10:38,822 - INFO - [cached since 333.7s ago] {'id_1': 7}
+2025-06-30 20:10:38,852 - INFO - ROLLBACK
+2025-06-30 20:10:38,887 - INFO - �û� 13 ���ӵ�Ŀ�� 7
+2025-06-30 20:10:45,403 - INFO - �յ���Ϣ from 13 to 7: {'id': 1751285445402, 'text': '888', 'time': '2025-06-30T12:10:45.402Z', 'from': 13, 'to': 7, 'fromUsername': '�Ŵ�ɽ', 'fromPhoto': '/avatar/ph_13676542345_9aca.png'}
+2025-06-30 20:10:45,403 - INFO - ������Ϣ�� {'encrypt_data': 'IshvQFKtHohNOS/5dB0fMkdpyHZ2u8hazaCuloFsadsmSjoBN5cXhTmtKXfe6bWWgs2xX68Wykj/1Nxol1skaR5L7u7orWGVVsrb9R0UczN58axsP5mxNRfCJJzmsTeewP1EJ6C4vknAG+Vzpng8viWAGJUu0Fm6BxZChCL9cSITGGspuAvUc1LmxKCH+kwwnV+OmVF/vP9tGMqDpe/IgCfvM2B2WsFy/FJYyCYxuC5c6kGvaMc0xUh0ARCbG1TfRMPopAqkX0LPD+E3eNWyaex05ZpGJltdT06HQ8xnhWA=', 'publick_key': 'd9dcd625-dd51-4c11-b82c-56df8d546bc5'}
+2025-06-30 20:10:45,415 - INFO - BEGIN (implicit)
+2025-06-30 20:10:45,416 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:10:45,416 - INFO - [cached since 340.3s ago] {'id_1': 7}
+2025-06-30 20:10:59,508 - INFO - �û� 7 �Ͽ�����
+2025-06-30 20:11:02,839 - INFO - BEGIN (implicit)
+2025-06-30 20:11:02,840 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:11:02,840 - INFO - [cached since 357.8s ago] {'id_1': 13}
+2025-06-30 20:11:02,853 - INFO - ROLLBACK
+2025-06-30 20:11:02,917 - INFO - �û� 7 ���ӵ�Ŀ�� 13
+2025-06-30 20:11:45,115 - INFO - �û� 7 �Ͽ�����
+2025-06-30 20:11:48,576 - INFO - BEGIN (implicit)
+2025-06-30 20:11:48,600 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:11:48,600 - INFO - [cached since 403.5s ago] {'id_1': 13}
+2025-06-30 20:11:48,604 - INFO - ROLLBACK
+2025-06-30 20:11:48,683 - INFO - �û� 7 ���ӵ�Ŀ�� 13
+2025-06-30 20:11:52,645 - INFO - �û� 13 �Ͽ�����
+2025-06-30 20:11:52,646 - INFO - ROLLBACK
+2025-06-30 20:11:53,561 - INFO - BEGIN (implicit)
+2025-06-30 20:11:53,567 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:11:53,567 - INFO - [cached since 408.5s ago] {'id_1': 7}
+2025-06-30 20:11:53,593 - INFO - ROLLBACK
+2025-06-30 20:11:53,618 - INFO - �û� 13 ���ӵ�Ŀ�� 7
+2025-06-30 20:12:13,083 - INFO - �յ���Ϣ from 13 to 7: {'id': 1751285533082, 'text': '123', 'time': '2025-06-30T12:12:13.082Z', 'from': 13, 'to': 7, 'fromUsername': '�Ŵ�ɽ', 'fromPhoto': '/avatar/ph_13676542345_9aca.png'}
+2025-06-30 20:12:13,084 - INFO - ������Ϣ�� {'encrypt_data': 'mGiXUTbqPoKrtVjmbwMoKrU2LfQEBtlQC25lgHil+i7GO56XgHzNyw7hVJZzzwYvaFFSnEPFffW7CNytvPyHhPzyT0+cBAPNZCpNj854Em97SgL6pTUy4tw7MfYZsCoICO0eYmEFxWKrzDfhLpNnMe4SZsctp7zG1kSOoR8al84dLpeOFaBF/sdTLpcZYNKj47AbkMEClVmmxlrfQmDkYGrY5F0dq2Mt4tQ+9GbLZxNXjS6n0//9kkPkZjkFqc6gRt5JxZdqfVuZ/bZohPP8QeB0dFTDc0gYXAroUmTG+5c=', 'publick_key': '031c2ab7-e574-4007-8d07-c7e2a7dde63a'}
+2025-06-30 20:12:13,091 - INFO - BEGIN (implicit)
+2025-06-30 20:12:13,092 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:12:13,092 - INFO - [cached since 428s ago] {'id_1': 7}
+2025-06-30 20:12:19,905 - INFO - �յ���Ϣ from 7 to 13: {'id': 1751285539904, 'text': '234', 'time': '2025-06-30T12:12:19.904Z', 'from': 7, 'to': 13, 'fromUsername': '����', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-30 20:12:19,908 - INFO - ������Ϣ�� {'encrypt_data': 'lNSPxJ7JhRQcaLqGY5lWhT7ZDDGNNwFArFqstaemoJLclT9/Oz6+B5gPMwX7yQj6zL8Mk+op7TCb6q3IVk1LQCk12LzI1IAUUDfmW2Dhx0lC+i9h4jr+8D4TX+a89YbFsiiX0A8rEuSMXNW9iaoaFgb/XA5yoRLUwraqFUor8hOCjizSsP+/CP9O83zjSNxQy+GODNUTeNJ1AmkcXRpkoUWPTatWo37706j9KClpNcECPAXDuoJVc6bkiryqgaHYcvrBM4KpSftSWiUVvB6I7Q==', 'publick_key': '3b4399be-6417-47f5-b644-5f6da9c80afb'}
+2025-06-30 20:12:19,915 - INFO - BEGIN (implicit)
+2025-06-30 20:12:19,916 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:12:19,917 - INFO - [cached since 434.8s ago] {'id_1': 13}
+2025-06-30 20:14:00,265 - INFO - ������Ϣ�� {'encrypt_data': 'EUPVi+xP0qDc1JTCzH8RX9da+Av9JYW04utWcQDNSS9uBpHdHppfc8P8Ft9WxKKgI71hDDQr8pGxVtnH6SH1e1iggpkqNIR3ntGUDNvmMwaW1aIjhcprk+7/HW7GuuACg9anqI5HDqsJGCGSTKWeXgyqstcU8iO9SsQHPZ9Pqw6R+ma+dxX9n3h5tgPbw8DVvLEGJeXPNFQUQAlk2nGhABrIFatAQLvxX1N+PIfCjiRlmPmAGXpsGuzfl/I4s0QyPsb3jIm/g5TGQTd1ssJenzL0BE+REfU98BH+45f4hIaXBVgfOQyQk07oEgnPdN7r', 'publick_key': 'f206b58a-1691-40a9-8fb0-37b5cb8e2ec1'}
+2025-06-30 20:14:00,269 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:14:00,270 - INFO - [cached since 535.2s ago] {'id_1': 7}
+2025-06-30 20:20:25,494 - INFO - �û� 13 �Ͽ�����
+2025-06-30 20:20:25,497 - INFO - �û� 7 �Ͽ�����
+2025-06-30 20:20:25,499 - INFO - ROLLBACK
+2025-06-30 20:20:25,544 - INFO - ROLLBACK
+2025-06-30 20:20:26,795 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] Զ������ǿ�ȹر���һ�����е����ӡ�
+2025-06-30 20:20:26,846 - INFO - Closing down clientserver connection
+2025-06-30 20:20:26,847 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] Զ������ǿ�ȹر���һ�����е����ӡ�
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-30 20:20:26,860 - INFO - Closing down clientserver connection
+2025-06-30 20:20:47,454 - INFO - �û� 13 ���ӵ�Ŀ�� 7
+2025-06-30 20:21:09,634 - INFO - SELECT DATABASE()
+2025-06-30 20:21:09,634 - INFO - [raw sql] {}
+2025-06-30 20:21:09,636 - INFO - SELECT @@sql_mode
+2025-06-30 20:21:09,636 - INFO - [raw sql] {}
+2025-06-30 20:21:09,636 - INFO - SELECT @@lower_case_table_names
+2025-06-30 20:21:09,636 - INFO - [raw sql] {}
+2025-06-30 20:21:09,638 - INFO - BEGIN (implicit)
+2025-06-30 20:21:09,644 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:21:09,645 - INFO - [generated in 0.00040s] {'id_1': 13}
+2025-06-30 20:21:09,648 - INFO - ROLLBACK
+2025-06-30 20:21:09,657 - INFO - �û� 7 ���ӵ�Ŀ�� 13
+2025-06-30 20:25:02,487 - INFO - �û� 7 �Ͽ�����
+2025-06-30 20:25:02,488 - INFO - �û� 13 �Ͽ�����
+2025-06-30 20:25:03,023 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] Զ������ǿ�ȹر���һ�����е����ӡ�
+2025-06-30 20:25:03,024 - INFO - Closing down clientserver connection
+2025-06-30 20:25:03,024 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] Զ������ǿ�ȹر���һ�����е����ӡ�
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-30 20:25:03,026 - INFO - Closing down clientserver connection
+2025-06-30 20:25:16,610 - INFO - 用户 7 连接到目标 13
+2025-06-30 20:25:17,565 - INFO - 用户 13 连接到目标 7
+2025-06-30 20:25:23,838 - INFO - 用户 7 断开连接
+2025-06-30 20:25:24,426 - INFO - SELECT DATABASE()
+2025-06-30 20:25:24,426 - INFO - [raw sql] {}
+2025-06-30 20:25:24,429 - INFO - SELECT @@sql_mode
+2025-06-30 20:25:24,429 - INFO - [raw sql] {}
+2025-06-30 20:25:24,431 - INFO - SELECT @@lower_case_table_names
+2025-06-30 20:25:24,431 - INFO - [raw sql] {}
+2025-06-30 20:25:24,435 - INFO - BEGIN (implicit)
+2025-06-30 20:25:24,447 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:25:24,447 - INFO - [generated in 0.00043s] {'id_1': 13}
+2025-06-30 20:25:24,449 - INFO - ROLLBACK
+2025-06-30 20:25:24,464 - INFO - 用户 7 连接到目标 13
+2025-06-30 20:25:33,744 - INFO - 收到消息 from 7 to 13: {'id': 1751286333743, 'text': '6768u', 'time': '2025-06-30T12:25:33.743Z', 'from': 7, 'to': 13, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-30 20:25:33,744 - INFO - 加密消息： {'encrypt_data': '9T2/l9OK+88yfh2FxuOhP59XJeGpNkhsKbEsw6DxH2S5t16Jme9CFH5VMMWvWYFiD1MKpKTPDjrfcKEChnfe9si96kDfIHGiEpr1G5pcfoTGqIzzqo1lPbJZFBkJDVsBKkl5bmnZzw03UTGcB8RhoC54Wu0g7qOQUevRgaMHkfP14WAS99NfJ/PzEtGLMikln9S4mWiaR+Bluo4D7D0HMlTZdIX0cXLckf+9RWBQZhZ0lKFh5HRDjaNIQXNM5ihclg4Hu4rCMmUi7OpuHoWTug==', 'publick_key': '0ed461f6-bb8a-4115-9409-61ddae8f0a14'}
+2025-06-30 20:25:33,749 - INFO - BEGIN (implicit)
+2025-06-30 20:25:33,751 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-30 20:25:33,751 - INFO - [cached since 9.304s ago] {'id_1': 13}
+2025-06-30 20:26:44,747 - INFO - 用户 7 断开连接
+2025-06-30 20:26:44,748 - INFO - 用户 13 断开连接
+2025-06-30 20:26:44,751 - INFO - ROLLBACK
+2025-06-30 20:26:45,523 - INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\pyspark\errors\exceptions\captured.py", line 169, in deco
+    return f(*a, **kw)
+  File "D:\conda\lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-30 20:26:45,538 - INFO - Closing down clientserver connection
+2025-06-30 20:26:47,585 - INFO - Closing down clientserver connection
+2025-06-30 20:26:47,585 - INFO - Closing down clientserver connection
+2025-06-30 20:26:45,538 - INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\pyspark\errors\exceptions\captured.py", line 169, in deco
+    return f(*a, **kw)
+  File "D:\conda\lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending

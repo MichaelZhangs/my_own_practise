@@ -1,0 +1,2744 @@
+2025-06-15 13:03:30,426 - INFO - 发送验证码: phone=12345543212, code=965075
+2025-06-15 13:03:32,312 - INFO - SELECT DATABASE()
+2025-06-15 13:03:32,312 - INFO - [raw sql] {}
+2025-06-15 13:03:32,314 - INFO - SELECT @@sql_mode
+2025-06-15 13:03:32,315 - INFO - [raw sql] {}
+2025-06-15 13:03:32,316 - INFO - SELECT @@lower_case_table_names
+2025-06-15 13:03:32,316 - INFO - [raw sql] {}
+2025-06-15 13:03:32,318 - INFO - BEGIN (implicit)
+2025-06-15 13:03:32,329 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.phone = %(phone_1)s
+2025-06-15 13:03:32,330 - INFO - [generated in 0.00120s] {'phone_1': '12345543212'}
+2025-06-15 13:03:32,357 - INFO - ROLLBACK
+2025-06-15 13:06:57,427 - INFO - 发送验证码: phone=12345678921, code=496059
+2025-06-15 13:06:59,268 - INFO - BEGIN (implicit)
+2025-06-15 13:06:59,268 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.phone = %(phone_1)s
+2025-06-15 13:06:59,268 - INFO - [cached since 206.9s ago] {'phone_1': '12345678921'}
+2025-06-15 13:06:59,271 - INFO - ROLLBACK
+2025-06-15 13:07:07,483 - INFO - BEGIN (implicit)
+2025-06-15 13:07:07,485 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.username LIKE %(username_1)s OR users.phone LIKE %(phone_1)s
+2025-06-15 13:07:07,485 - INFO - [generated in 0.00028s] {'username_1': '%张%', 'phone_1': '%张%'}
+2025-06-15 13:07:07,487 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.username LIKE %(username_1)s OR users.phone LIKE %(phone_1)s 
+ LIMIT %(param_1)s, %(param_2)s
+2025-06-15 13:07:07,487 - INFO - [generated in 0.00026s] {'username_1': '%张%', 'phone_1': '%张%', 'param_1': 0, 'param_2': 10}
+2025-06-15 13:07:07,553 - INFO - ROLLBACK
+2025-06-15 13:07:09,934 - INFO - BEGIN (implicit)
+2025-06-15 13:07:09,936 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:07:09,936 - INFO - [generated in 0.00062s] {'id_1': 6}
+2025-06-15 13:07:09,940 - INFO - ROLLBACK
+2025-06-15 13:07:09,953 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:07:34,819 - INFO - 收到消息 from 7 to 6: {'id': 1749964054817, 'text': '889988', 'time': '2025-06-15T05:07:34.817Z', 'from': 7, 'to': 6}
+2025-06-15 13:07:34,820 - INFO - 目标用户 6 离线，消息将存储为离线消息
+2025-06-15 13:08:12,460 - INFO - BEGIN (implicit)
+2025-06-15 13:08:12,461 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.username LIKE %(username_1)s OR users.phone LIKE %(phone_1)s
+2025-06-15 13:08:12,461 - INFO - [cached since 64.98s ago] {'username_1': '%赵%', 'phone_1': '%赵%'}
+2025-06-15 13:08:12,463 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.username LIKE %(username_1)s OR users.phone LIKE %(phone_1)s 
+ LIMIT %(param_1)s, %(param_2)s
+2025-06-15 13:08:12,463 - INFO - [cached since 64.98s ago] {'username_1': '%赵%', 'phone_1': '%赵%', 'param_1': 0, 'param_2': 10}
+2025-06-15 13:08:12,465 - INFO - ROLLBACK
+2025-06-15 13:08:15,332 - INFO - BEGIN (implicit)
+2025-06-15 13:08:15,333 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:08:15,334 - INFO - [cached since 65.4s ago] {'id_1': 7}
+2025-06-15 13:08:15,345 - INFO - ROLLBACK
+2025-06-15 13:08:15,363 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:17:07,935 - INFO - 用户 7 断开连接
+2025-06-15 13:17:07,967 - INFO - 用户 6 断开连接
+2025-06-15 13:25:36,651 - INFO - BEGIN (implicit)
+2025-06-15 13:25:36,652 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:25:36,652 - INFO - [cached since 1107s ago] {'id_1': 7}
+2025-06-15 13:25:36,656 - INFO - ROLLBACK
+2025-06-15 13:25:36,674 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:25:38,443 - INFO - BEGIN (implicit)
+2025-06-15 13:25:38,443 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:25:38,444 - INFO - [cached since 1108s ago] {'id_1': 6}
+2025-06-15 13:25:38,446 - INFO - ROLLBACK
+2025-06-15 13:25:38,473 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:33:10,522 - INFO - 用户 7 断开连接
+2025-06-15 13:33:10,530 - INFO - BEGIN (implicit)
+2025-06-15 13:33:10,531 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:33:10,531 - INFO - [cached since 1561s ago] {'id_1': 6}
+2025-06-15 13:33:10,535 - INFO - ROLLBACK
+2025-06-15 13:33:10,537 - INFO - 用户 6 断开连接
+2025-06-15 13:33:10,548 - INFO - BEGIN (implicit)
+2025-06-15 13:33:10,549 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:33:10,549 - INFO - [cached since 1561s ago] {'id_1': 7}
+2025-06-15 13:33:10,552 - INFO - ROLLBACK
+2025-06-15 13:33:10,702 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:33:10,706 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:33:14,421 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:33:14,426 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:35:44,439 - INFO - 用户 7 断开连接
+2025-06-15 13:35:44,441 - INFO - 用户 6 断开连接
+2025-06-15 13:35:44,451 - INFO - BEGIN (implicit)
+2025-06-15 13:35:44,451 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:35:44,451 - INFO - [cached since 1714s ago] {'id_1': 6}
+2025-06-15 13:35:44,456 - INFO - ROLLBACK
+2025-06-15 13:35:44,483 - INFO - BEGIN (implicit)
+2025-06-15 13:35:44,484 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:35:44,485 - INFO - [cached since 1715s ago] {'id_1': 7}
+2025-06-15 13:35:44,490 - INFO - ROLLBACK
+2025-06-15 13:35:44,502 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:35:44,507 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:35:47,466 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:35:48,427 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:35:50,547 - INFO - 收到消息 from 6 to 7: {'id': 1749965750547, 'text': '000', 'time': '2025-06-15T05:35:50.547Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 13:37:50,513 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:37:50,530 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:37:50,543 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:37:50,564 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:37:52,336 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:37:52,427 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:37:58,107 - INFO - 收到消息 from 6 to 7: {'id': 1749965878105, 'text': '888', 'time': '2025-06-15T05:37:58.105Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 13:38:17,493 - INFO - 用户 7 断开连接
+2025-06-15 13:38:17,494 - INFO - 用户 7 断开连接
+2025-06-15 13:38:17,495 - INFO - 用户 7 断开连接
+2025-06-15 13:38:19,180 - INFO - SELECT DATABASE()
+2025-06-15 13:38:19,181 - INFO - [raw sql] {}
+2025-06-15 13:38:19,191 - INFO - SELECT @@sql_mode
+2025-06-15 13:38:19,193 - INFO - [raw sql] {}
+2025-06-15 13:38:19,197 - INFO - SELECT @@lower_case_table_names
+2025-06-15 13:38:19,197 - INFO - [raw sql] {}
+2025-06-15 13:38:19,199 - INFO - BEGIN (implicit)
+2025-06-15 13:38:19,212 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:38:19,214 - INFO - [generated in 0.00071s] {'id_1': 6}
+2025-06-15 13:38:19,216 - INFO - ROLLBACK
+2025-06-15 13:38:19,310 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:38:45,573 - INFO - 用户 6 断开连接
+2025-06-15 13:38:45,575 - INFO - 用户 6 断开连接
+2025-06-15 13:38:45,577 - INFO - 用户 6 断开连接
+2025-06-15 13:38:46,102 - INFO - BEGIN (implicit)
+2025-06-15 13:38:46,103 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:38:46,103 - INFO - [cached since 26.89s ago] {'id_1': 7}
+2025-06-15 13:38:46,105 - INFO - ROLLBACK
+2025-06-15 13:38:46,114 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:38:53,181 - INFO - 收到消息 from 6 to 7: {'id': 1749965933180, 'text': '777', 'time': '2025-06-15T05:38:53.180Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 13:40:13,670 - INFO - 收到消息 from 6 to 7: {'id': 1749966013670, 'text': '7896', 'time': '2025-06-15T05:40:13.670Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 13:42:26,956 - INFO - 用户 6 断开连接
+2025-06-15 13:42:26,958 - INFO - 用户 7 断开连接
+2025-06-15 13:42:27,569 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 13:42:27,663 - INFO - Closing down clientserver connection
+2025-06-15 13:42:27,663 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 13:42:27,694 - INFO - Closing down clientserver connection
+2025-06-15 13:42:37,456 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:42:37,466 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:42:42,033 - INFO - 用户 7 断开连接
+2025-06-15 13:42:43,496 - INFO - SELECT DATABASE()
+2025-06-15 13:42:43,497 - INFO - [raw sql] {}
+2025-06-15 13:42:43,499 - INFO - SELECT @@sql_mode
+2025-06-15 13:42:43,499 - INFO - [raw sql] {}
+2025-06-15 13:42:43,500 - INFO - SELECT @@lower_case_table_names
+2025-06-15 13:42:43,500 - INFO - [raw sql] {}
+2025-06-15 13:42:43,503 - INFO - BEGIN (implicit)
+2025-06-15 13:42:43,512 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:42:43,512 - INFO - [generated in 0.00091s] {'id_1': 6}
+2025-06-15 13:42:43,524 - INFO - ROLLBACK
+2025-06-15 13:42:43,662 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:42:54,904 - INFO - 收到消息 from 7 to 6: {'id': 1749966174901, 'text': '1234', 'time': '2025-06-15T05:42:54.901Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 13:46:30,907 - INFO - 用户 6 断开连接
+2025-06-15 13:46:30,912 - INFO - 用户 7 断开连接
+2025-06-15 13:46:32,867 - INFO - BEGIN (implicit)
+2025-06-15 13:46:32,868 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:46:32,868 - INFO - [cached since 229.4s ago] {'id_1': 7}
+2025-06-15 13:46:32,870 - INFO - ROLLBACK
+2025-06-15 13:46:32,882 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:46:34,137 - INFO - BEGIN (implicit)
+2025-06-15 13:46:34,138 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:46:34,138 - INFO - [cached since 230.6s ago] {'id_1': 6}
+2025-06-15 13:46:34,141 - INFO - ROLLBACK
+2025-06-15 13:46:34,167 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:49:03,754 - INFO - 用户 7 断开连接
+2025-06-15 13:49:03,758 - INFO - 用户 6 断开连接
+2025-06-15 13:49:05,197 - INFO - BEGIN (implicit)
+2025-06-15 13:49:05,199 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:49:05,200 - INFO - [cached since 381.7s ago] {'id_1': 7}
+2025-06-15 13:49:05,203 - INFO - ROLLBACK
+2025-06-15 13:49:05,216 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:49:06,889 - INFO - BEGIN (implicit)
+2025-06-15 13:49:06,889 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:49:06,890 - INFO - [cached since 383.4s ago] {'id_1': 6}
+2025-06-15 13:49:06,891 - INFO - ROLLBACK
+2025-06-15 13:49:06,910 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:52:15,466 - INFO - 用户 6 断开连接
+2025-06-15 13:52:15,473 - INFO - 用户 7 断开连接
+2025-06-15 13:52:15,476 - INFO - BEGIN (implicit)
+2025-06-15 13:52:15,477 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:52:15,477 - INFO - [cached since 572s ago] {'id_1': 7}
+2025-06-15 13:52:15,483 - INFO - ROLLBACK
+2025-06-15 13:52:15,488 - INFO - BEGIN (implicit)
+2025-06-15 13:52:15,489 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:52:15,489 - INFO - [cached since 572s ago] {'id_1': 6}
+2025-06-15 13:52:15,493 - INFO - ROLLBACK
+2025-06-15 13:52:15,631 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:52:15,650 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:52:19,058 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:52:19,438 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:52:24,092 - INFO - 用户 6 断开连接
+2025-06-15 13:52:24,101 - INFO - 用户 6 断开连接
+2025-06-15 13:52:24,317 - INFO - BEGIN (implicit)
+2025-06-15 13:52:24,319 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:52:24,320 - INFO - [cached since 580.8s ago] {'id_1': 7}
+2025-06-15 13:52:24,323 - INFO - ROLLBACK
+2025-06-15 13:52:24,331 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:52:42,265 - INFO - 用户 7 断开连接
+2025-06-15 13:52:42,273 - INFO - 用户 7 断开连接
+2025-06-15 13:52:42,781 - INFO - BEGIN (implicit)
+2025-06-15 13:52:42,785 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:52:42,786 - INFO - [cached since 599.3s ago] {'id_1': 6}
+2025-06-15 13:52:42,790 - INFO - ROLLBACK
+2025-06-15 13:52:42,907 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:53:23,122 - INFO - 用户 6 断开连接
+2025-06-15 13:53:23,124 - INFO - 用户 7 断开连接
+2025-06-15 13:53:23,134 - INFO - BEGIN (implicit)
+2025-06-15 13:53:23,135 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:53:23,136 - INFO - [cached since 639.6s ago] {'id_1': 7}
+2025-06-15 13:53:23,139 - INFO - ROLLBACK
+2025-06-15 13:53:23,151 - INFO - BEGIN (implicit)
+2025-06-15 13:53:23,152 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:53:23,153 - INFO - [cached since 639.6s ago] {'id_1': 6}
+2025-06-15 13:53:23,156 - INFO - ROLLBACK
+2025-06-15 13:53:23,168 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:53:23,173 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:53:26,158 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:53:26,427 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:53:27,414 - INFO - 用户 6 断开连接
+2025-06-15 13:53:27,419 - INFO - 用户 6 断开连接
+2025-06-15 13:53:27,663 - INFO - BEGIN (implicit)
+2025-06-15 13:53:27,664 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:53:27,664 - INFO - [cached since 644.1s ago] {'id_1': 7}
+2025-06-15 13:53:27,669 - INFO - ROLLBACK
+2025-06-15 13:53:27,682 - INFO - 用户 6 连接到目标 7
+2025-06-15 13:53:34,466 - INFO - 用户 7 断开连接
+2025-06-15 13:53:34,471 - INFO - 用户 7 断开连接
+2025-06-15 13:53:34,927 - INFO - BEGIN (implicit)
+2025-06-15 13:53:34,928 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 13:53:34,928 - INFO - [cached since 651.4s ago] {'id_1': 6}
+2025-06-15 13:53:34,930 - INFO - ROLLBACK
+2025-06-15 13:53:35,025 - INFO - 用户 7 连接到目标 6
+2025-06-15 13:53:41,962 - INFO - 收到消息 from 7 to 6: {'id': 1749966821960, 'text': '999', 'time': '2025-06-15T05:53:41.960Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 13:53:51,849 - INFO - 收到消息 from 7 to 6: {'id': 1749966831848, 'text': '888】', 'time': '2025-06-15T05:53:51.848Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 13:54:03,088 - INFO - 收到消息 from 6 to 7: {'id': 1749966843086, 'text': '888000', 'time': '2025-06-15T05:54:03.086Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:00:50,614 - INFO - 用户 6 断开连接
+2025-06-15 14:00:50,623 - INFO - 用户 7 断开连接
+2025-06-15 14:00:52,068 - INFO - BEGIN (implicit)
+2025-06-15 14:00:52,068 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:00:52,068 - INFO - [cached since 1089s ago] {'id_1': 7}
+2025-06-15 14:00:52,071 - INFO - ROLLBACK
+2025-06-15 14:00:52,083 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:00:54,114 - INFO - BEGIN (implicit)
+2025-06-15 14:00:54,114 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:00:54,114 - INFO - [cached since 1091s ago] {'id_1': 6}
+2025-06-15 14:00:54,116 - INFO - ROLLBACK
+2025-06-15 14:00:54,138 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:11:22,958 - INFO - 用户 6 断开连接
+2025-06-15 14:11:22,969 - INFO - BEGIN (implicit)
+2025-06-15 14:11:22,970 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:11:22,970 - INFO - [cached since 1719s ago] {'id_1': 7}
+2025-06-15 14:11:22,975 - INFO - ROLLBACK
+2025-06-15 14:11:22,977 - INFO - 用户 7 断开连接
+2025-06-15 14:11:22,986 - INFO - BEGIN (implicit)
+2025-06-15 14:11:22,987 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:11:22,987 - INFO - [cached since 1719s ago] {'id_1': 6}
+2025-06-15 14:11:22,990 - INFO - ROLLBACK
+2025-06-15 14:11:23,008 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:11:23,131 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:11:26,132 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:11:26,437 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:11:32,514 - INFO - 收到消息 from 6 to 7: {'id': 1749967892513, 'text': '777', 'time': '2025-06-15T06:11:32.513Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:11:48,945 - INFO - 用户 6 断开连接
+2025-06-15 14:11:48,946 - INFO - 用户 6 断开连接
+2025-06-15 14:11:49,515 - INFO - BEGIN (implicit)
+2025-06-15 14:11:49,516 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:11:49,517 - INFO - [cached since 1746s ago] {'id_1': 7}
+2025-06-15 14:11:49,522 - INFO - ROLLBACK
+2025-06-15 14:11:49,532 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:12:37,705 - INFO - 用户 6 断开连接
+2025-06-15 14:12:37,711 - INFO - BEGIN (implicit)
+2025-06-15 14:12:37,712 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:12:37,712 - INFO - [cached since 1794s ago] {'id_1': 7}
+2025-06-15 14:12:37,714 - INFO - ROLLBACK
+2025-06-15 14:12:37,730 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:12:37,989 - INFO - 用户 7 断开连接
+2025-06-15 14:12:37,996 - INFO - BEGIN (implicit)
+2025-06-15 14:12:37,997 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:12:37,997 - INFO - [cached since 1794s ago] {'id_1': 6}
+2025-06-15 14:12:38,001 - INFO - ROLLBACK
+2025-06-15 14:12:38,038 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:12:40,741 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:12:41,444 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:12:44,193 - INFO - 用户 6 断开连接
+2025-06-15 14:12:44,200 - INFO - 用户 6 断开连接
+2025-06-15 14:12:44,524 - INFO - BEGIN (implicit)
+2025-06-15 14:12:44,526 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:12:44,526 - INFO - [cached since 1801s ago] {'id_1': 7}
+2025-06-15 14:12:44,528 - INFO - ROLLBACK
+2025-06-15 14:12:44,539 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:13:00,384 - INFO - 用户 7 断开连接
+2025-06-15 14:13:00,397 - INFO - BEGIN (implicit)
+2025-06-15 14:13:00,398 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:13:00,399 - INFO - [cached since 1817s ago] {'id_1': 6}
+2025-06-15 14:13:00,401 - INFO - ROLLBACK
+2025-06-15 14:13:00,407 - INFO - 用户 6 断开连接
+2025-06-15 14:13:00,413 - INFO - BEGIN (implicit)
+2025-06-15 14:13:00,415 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:13:00,415 - INFO - [cached since 1817s ago] {'id_1': 7}
+2025-06-15 14:13:00,418 - INFO - ROLLBACK
+2025-06-15 14:13:00,439 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:13:00,447 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:13:03,441 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:13:03,447 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:13:31,438 - INFO - 用户 7 断开连接
+2025-06-15 14:13:31,469 - INFO - 用户 6 断开连接
+2025-06-15 14:13:31,474 - INFO - BEGIN (implicit)
+2025-06-15 14:13:31,474 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:13:31,475 - INFO - [cached since 1848s ago] {'id_1': 6}
+2025-06-15 14:13:31,477 - INFO - ROLLBACK
+2025-06-15 14:13:31,487 - INFO - BEGIN (implicit)
+2025-06-15 14:13:31,488 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:13:31,488 - INFO - [cached since 1848s ago] {'id_1': 7}
+2025-06-15 14:13:31,491 - INFO - ROLLBACK
+2025-06-15 14:13:31,521 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:13:31,526 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:13:34,521 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:13:35,439 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:13:38,973 - INFO - 用户 6 断开连接
+2025-06-15 14:13:38,975 - INFO - 用户 6 断开连接
+2025-06-15 14:13:38,977 - INFO - 用户 6 断开连接
+2025-06-15 14:13:39,289 - INFO - BEGIN (implicit)
+2025-06-15 14:13:39,291 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:13:39,292 - INFO - [cached since 1856s ago] {'id_1': 7}
+2025-06-15 14:13:39,296 - INFO - ROLLBACK
+2025-06-15 14:13:39,306 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:13:56,702 - INFO - 收到消息 from 7 to 6: {'id': 1749968036700, 'text': '000', 'time': '2025-06-15T06:13:56.701Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 14:14:27,720 - INFO - 用户 7 断开连接
+2025-06-15 14:14:27,736 - INFO - 用户 7 断开连接
+2025-06-15 14:14:27,739 - INFO - 用户 7 断开连接
+2025-06-15 14:14:27,741 - INFO - 用户 7 断开连接
+2025-06-15 14:14:27,742 - INFO - 用户 7 断开连接
+2025-06-15 14:14:28,443 - INFO - BEGIN (implicit)
+2025-06-15 14:14:28,443 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:14:28,443 - INFO - [cached since 1905s ago] {'id_1': 6}
+2025-06-15 14:14:28,447 - INFO - ROLLBACK
+2025-06-15 14:14:28,542 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:14:46,483 - INFO - 用户 7 断开连接
+2025-06-15 14:14:46,489 - INFO - BEGIN (implicit)
+2025-06-15 14:14:46,490 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:14:46,490 - INFO - [cached since 1923s ago] {'id_1': 6}
+2025-06-15 14:14:46,493 - INFO - ROLLBACK
+2025-06-15 14:14:46,504 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:14:46,785 - INFO - 用户 6 断开连接
+2025-06-15 14:14:46,792 - INFO - BEGIN (implicit)
+2025-06-15 14:14:46,794 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:14:46,794 - INFO - [cached since 1923s ago] {'id_1': 7}
+2025-06-15 14:14:46,796 - INFO - ROLLBACK
+2025-06-15 14:14:46,920 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:14:49,930 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:14:50,444 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:14:56,074 - INFO - 收到消息 from 6 to 7: {'id': 1749968096072, 'text': '999', 'time': '2025-06-15T06:14:56.072Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:15:09,559 - INFO - 收到消息 from 7 to 6: {'id': 1749968109557, 'text': '000', 'time': '2025-06-15T06:15:09.557Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 14:18:49,743 - INFO - 用户 7 断开连接
+2025-06-15 14:18:49,745 - INFO - 用户 7 断开连接
+2025-06-15 14:18:49,779 - INFO - 用户 6 断开连接
+2025-06-15 14:18:49,781 - INFO - 用户 6 断开连接
+2025-06-15 14:18:50,370 - INFO - BEGIN (implicit)
+2025-06-15 14:18:50,371 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:18:50,377 - INFO - [cached since 2167s ago] {'id_1': 7}
+2025-06-15 14:18:50,380 - INFO - ROLLBACK
+2025-06-15 14:18:50,397 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:18:52,462 - INFO - BEGIN (implicit)
+2025-06-15 14:18:52,462 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:18:52,463 - INFO - [cached since 2169s ago] {'id_1': 6}
+2025-06-15 14:18:52,465 - INFO - ROLLBACK
+2025-06-15 14:18:52,655 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:18:55,975 - INFO - 收到消息 from 6 to 7: {'id': 1749968335973, 'text': '999', 'time': '2025-06-15T06:18:55.973Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:18:59,058 - INFO - 收到消息 from 6 to 7: {'id': 1749968339057, 'text': '000', 'time': '2025-06-15T06:18:59.057Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:19:10,074 - INFO - 收到消息 from 7 to 6: {'id': 1749968350073, 'text': '999888', 'time': '2025-06-15T06:19:10.073Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 14:19:46,195 - INFO - 用户 6 断开连接
+2025-06-15 14:19:46,201 - INFO - 用户 7 断开连接
+2025-06-15 14:19:46,929 - INFO - BEGIN (implicit)
+2025-06-15 14:19:46,930 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:19:46,930 - INFO - [cached since 2223s ago] {'id_1': 7}
+2025-06-15 14:19:46,945 - INFO - ROLLBACK
+2025-06-15 14:19:46,960 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:19:48,183 - INFO - BEGIN (implicit)
+2025-06-15 14:19:48,184 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:19:48,184 - INFO - [cached since 2225s ago] {'id_1': 6}
+2025-06-15 14:19:48,186 - INFO - ROLLBACK
+2025-06-15 14:19:48,207 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:19:58,120 - INFO - 收到消息 from 7 to 6: {'id': 1749968398118, 'text': '6754', 'time': '2025-06-15T06:19:58.118Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 14:20:02,020 - INFO - 收到消息 from 7 to 6: {'id': 1749968402019, 'text': '45354', 'time': '2025-06-15T06:20:02.019Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 14:20:20,794 - INFO - 收到消息 from 6 to 7: {'id': 1749968420792, 'text': '6786', 'time': '2025-06-15T06:20:20.792Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:23:42,974 - INFO - 用户 6 断开连接
+2025-06-15 14:23:42,978 - INFO - 用户 7 断开连接
+2025-06-15 14:23:45,207 - INFO - BEGIN (implicit)
+2025-06-15 14:23:45,208 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:23:45,208 - INFO - [cached since 2462s ago] {'id_1': 7}
+2025-06-15 14:23:45,210 - INFO - ROLLBACK
+2025-06-15 14:23:45,247 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:23:45,742 - INFO - BEGIN (implicit)
+2025-06-15 14:23:45,742 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:23:45,743 - INFO - [cached since 2462s ago] {'id_1': 6}
+2025-06-15 14:23:45,746 - INFO - ROLLBACK
+2025-06-15 14:23:45,771 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:24:07,777 - INFO - 收到消息 from 6 to 7: {'id': 1749968647776, 'text': '67654', 'time': '2025-06-15T06:24:07.776Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:24:38,407 - INFO - 用户 7 断开连接
+2025-06-15 14:24:38,442 - INFO - 用户 6 断开连接
+2025-06-15 14:24:40,867 - INFO - BEGIN (implicit)
+2025-06-15 14:24:40,868 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:24:40,868 - INFO - [cached since 2517s ago] {'id_1': 6}
+2025-06-15 14:24:40,871 - INFO - ROLLBACK
+2025-06-15 14:24:40,894 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:24:43,386 - INFO - BEGIN (implicit)
+2025-06-15 14:24:43,387 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:24:43,387 - INFO - [cached since 2520s ago] {'id_1': 7}
+2025-06-15 14:24:43,393 - INFO - ROLLBACK
+2025-06-15 14:24:43,448 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:24:54,628 - INFO - 收到消息 from 6 to 7: {'id': 1749968694626, 'text': '888999', 'time': '2025-06-15T06:24:54.626Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:28:07,768 - INFO - 用户 7 断开连接
+2025-06-15 14:28:07,810 - INFO - 用户 6 断开连接
+2025-06-15 14:28:10,475 - INFO - BEGIN (implicit)
+2025-06-15 14:28:10,476 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:28:10,476 - INFO - [cached since 2727s ago] {'id_1': 6}
+2025-06-15 14:28:10,479 - INFO - ROLLBACK
+2025-06-15 14:28:10,514 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:28:11,891 - INFO - BEGIN (implicit)
+2025-06-15 14:28:11,891 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:28:11,891 - INFO - [cached since 2728s ago] {'id_1': 7}
+2025-06-15 14:28:11,893 - INFO - ROLLBACK
+2025-06-15 14:28:11,921 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:28:32,162 - INFO - 用户 6 断开连接
+2025-06-15 14:28:32,561 - INFO - 用户 7 断开连接
+2025-06-15 14:28:35,114 - INFO - BEGIN (implicit)
+2025-06-15 14:28:35,115 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:28:35,115 - INFO - [cached since 2752s ago] {'id_1': 6}
+2025-06-15 14:28:35,118 - INFO - ROLLBACK
+2025-06-15 14:28:35,146 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:28:36,693 - INFO - BEGIN (implicit)
+2025-06-15 14:28:36,694 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:28:36,694 - INFO - [cached since 2753s ago] {'id_1': 7}
+2025-06-15 14:28:36,697 - INFO - ROLLBACK
+2025-06-15 14:28:36,729 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:30:37,948 - INFO - 用户 6 断开连接
+2025-06-15 14:30:37,960 - INFO - BEGIN (implicit)
+2025-06-15 14:30:37,961 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:30:37,961 - INFO - [cached since 2874s ago] {'id_1': 7}
+2025-06-15 14:30:37,964 - INFO - ROLLBACK
+2025-06-15 14:30:37,966 - INFO - 用户 7 断开连接
+2025-06-15 14:30:37,975 - INFO - BEGIN (implicit)
+2025-06-15 14:30:37,976 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:30:37,976 - INFO - [cached since 2874s ago] {'id_1': 6}
+2025-06-15 14:30:37,979 - INFO - ROLLBACK
+2025-06-15 14:30:38,143 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:30:38,198 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:30:41,182 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:30:41,454 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:30:48,420 - INFO - 收到消息 from 6 to 7: {'id': 1749969048417, 'text': '9797', 'time': '2025-06-15T06:30:48.417Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:31:40,979 - INFO - 收到消息 from 7 to 6: {'id': 1749969100979, 'text': '080', 'time': '2025-06-15T06:31:40.979Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 14:37:09,549 - INFO - 用户 6 断开连接
+2025-06-15 14:37:09,552 - INFO - 用户 6 断开连接
+2025-06-15 14:37:09,600 - INFO - 用户 7 断开连接
+2025-06-15 14:37:10,481 - INFO - 用户 7 断开连接
+2025-06-15 14:37:12,626 - INFO - BEGIN (implicit)
+2025-06-15 14:37:12,626 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:37:12,627 - INFO - [cached since 3269s ago] {'id_1': 6}
+2025-06-15 14:37:12,629 - INFO - ROLLBACK
+2025-06-15 14:37:12,890 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:37:14,994 - INFO - BEGIN (implicit)
+2025-06-15 14:37:14,995 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:37:14,996 - INFO - [cached since 3271s ago] {'id_1': 7}
+2025-06-15 14:37:14,999 - INFO - ROLLBACK
+2025-06-15 14:37:15,037 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:37:23,552 - INFO - 收到消息 from 6 to 7: {'id': 1749969443547, 'text': '3434', 'time': '2025-06-15T06:37:23.547Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:37:31,738 - INFO - 收到消息 from 6 to 7: {'id': 1749969451737, 'text': '威威', 'time': '2025-06-15T06:37:31.737Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:38:17,865 - INFO - 收到消息 from 7 to 6: {'id': 1749969497864, 'text': '6767', 'time': '2025-06-15T06:38:17.864Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 14:38:59,785 - INFO - 收到消息 from 6 to 7: {'id': 1749969539782, 'text': '苦苦', 'time': '2025-06-15T06:38:59.782Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:39:08,828 - INFO - 收到消息 from 6 to 7: {'id': 1749969548825, 'text': '体哦天涯', 'time': '2025-06-15T06:39:08.825Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:39:28,604 - INFO - 收到消息 from 7 to 6: {'id': 1749969568604, 'text': '78979', 'time': '2025-06-15T06:39:28.604Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345678921_f039.png'}
+2025-06-15 14:47:18,114 - INFO - 用户 7 断开连接
+2025-06-15 14:47:18,128 - INFO - 用户 6 断开连接
+2025-06-15 14:47:18,132 - INFO - BEGIN (implicit)
+2025-06-15 14:47:18,133 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:47:18,133 - INFO - [cached since 3875s ago] {'id_1': 6}
+2025-06-15 14:47:18,136 - INFO - ROLLBACK
+2025-06-15 14:47:18,161 - INFO - BEGIN (implicit)
+2025-06-15 14:47:18,161 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:47:18,162 - INFO - [cached since 3875s ago] {'id_1': 7}
+2025-06-15 14:47:18,164 - INFO - ROLLBACK
+2025-06-15 14:47:18,860 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:47:18,901 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:47:22,449 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:47:22,460 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:49:19,788 - INFO - 用户 6 断开连接
+2025-06-15 14:49:19,790 - INFO - 用户 6 断开连接
+2025-06-15 14:49:20,824 - INFO - 用户 7 断开连接
+2025-06-15 14:49:20,828 - INFO - 用户 7 断开连接
+2025-06-15 14:49:23,692 - INFO - BEGIN (implicit)
+2025-06-15 14:49:23,693 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:49:23,693 - INFO - [cached since 4000s ago] {'id_1': 6}
+2025-06-15 14:49:23,695 - INFO - ROLLBACK
+2025-06-15 14:49:23,715 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:49:24,387 - INFO - BEGIN (implicit)
+2025-06-15 14:49:24,389 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:49:24,389 - INFO - [cached since 4001s ago] {'id_1': 7}
+2025-06-15 14:49:24,391 - INFO - ROLLBACK
+2025-06-15 14:49:24,419 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:52:00,998 - INFO - 用户 6 断开连接
+2025-06-15 14:52:01,868 - INFO - 用户 7 断开连接
+2025-06-15 14:52:03,337 - INFO - BEGIN (implicit)
+2025-06-15 14:52:03,337 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:52:03,338 - INFO - [cached since 4160s ago] {'id_1': 7}
+2025-06-15 14:52:03,340 - INFO - ROLLBACK
+2025-06-15 14:52:03,359 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:52:05,115 - INFO - BEGIN (implicit)
+2025-06-15 14:52:05,116 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:52:05,117 - INFO - [cached since 4162s ago] {'id_1': 6}
+2025-06-15 14:52:05,120 - INFO - ROLLBACK
+2025-06-15 14:52:05,172 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:52:14,413 - INFO - 收到消息 from 6 to 7: {'id': 1749970334411, 'text': '8979', 'time': '2025-06-15T06:52:14.411Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:52:20,141 - INFO - 收到消息 from 6 to 7: {'id': 1749970340139, 'text': 'u剖解', 'time': '2025-06-15T06:52:20.139Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:52:28,757 - INFO - 收到消息 from 6 to 7: {'id': 1749970348755, 'text': '787878', 'time': '2025-06-15T06:52:28.755Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:52:33,332 - INFO - 收到消息 from 6 to 7: {'id': 1749970353331, 'text': '897897', 'time': '2025-06-15T06:52:33.331Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:52:36,345 - INFO - 用户 6 断开连接
+2025-06-15 14:52:38,330 - INFO - BEGIN (implicit)
+2025-06-15 14:52:38,332 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:52:38,332 - INFO - [cached since 4195s ago] {'id_1': 7}
+2025-06-15 14:52:38,335 - INFO - ROLLBACK
+2025-06-15 14:52:38,403 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:55:50,525 - INFO - 收到消息 from 6 to 7: {'id': 1749970550524, 'text': '88i', 'time': '2025-06-15T06:55:50.524Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': 'http://127.0.0.1:8000/avatar/ph_12345543212_850a.png'}
+2025-06-15 14:56:47,829 - INFO - 用户 7 断开连接
+2025-06-15 14:56:47,832 - INFO - 用户 6 断开连接
+2025-06-15 14:56:47,846 - INFO - BEGIN (implicit)
+2025-06-15 14:56:47,847 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:56:47,847 - INFO - [cached since 4444s ago] {'id_1': 6}
+2025-06-15 14:56:47,852 - INFO - ROLLBACK
+2025-06-15 14:56:47,869 - INFO - BEGIN (implicit)
+2025-06-15 14:56:47,870 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:56:47,870 - INFO - [cached since 4444s ago] {'id_1': 7}
+2025-06-15 14:56:47,873 - INFO - ROLLBACK
+2025-06-15 14:56:47,921 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:56:48,109 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:56:51,452 - INFO - 用户 6 连接到目标 7
+2025-06-15 14:56:51,457 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:57:01,371 - INFO - 用户 7 断开连接
+2025-06-15 14:57:01,373 - INFO - 用户 7 断开连接
+2025-06-15 14:57:01,875 - INFO - BEGIN (implicit)
+2025-06-15 14:57:01,876 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 14:57:01,877 - INFO - [cached since 4458s ago] {'id_1': 6}
+2025-06-15 14:57:01,883 - INFO - ROLLBACK
+2025-06-15 14:57:01,996 - INFO - 用户 7 连接到目标 6
+2025-06-15 14:57:08,177 - INFO - 收到消息 from 7 to 6: {'id': 1749970628176, 'text': '7897', 'time': '2025-06-15T06:57:08.176Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 15:12:00,834 - INFO - 用户 6 断开连接
+2025-06-15 15:12:00,836 - INFO - 用户 7 断开连接
+2025-06-15 15:12:00,837 - INFO - 用户 6 断开连接
+2025-06-15 15:12:01,375 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 15:12:01,376 - INFO - Closing down clientserver connection
+2025-06-15 15:12:01,376 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 15:12:01,378 - INFO - Closing down clientserver connection
+2025-06-15 15:12:11,983 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:12:11,986 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:12:12,449 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:17:43,385 - INFO - 用户 7 断开连接
+2025-06-15 15:17:43,406 - INFO - 用户 6 断开连接
+2025-06-15 15:17:43,408 - INFO - 用户 6 断开连接
+2025-06-15 15:17:45,447 - INFO - SELECT DATABASE()
+2025-06-15 15:17:45,447 - INFO - [raw sql] {}
+2025-06-15 15:17:45,449 - INFO - SELECT @@sql_mode
+2025-06-15 15:17:45,449 - INFO - [raw sql] {}
+2025-06-15 15:17:45,450 - INFO - SELECT @@lower_case_table_names
+2025-06-15 15:17:45,451 - INFO - [raw sql] {}
+2025-06-15 15:17:45,455 - INFO - BEGIN (implicit)
+2025-06-15 15:17:45,466 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:17:45,466 - INFO - [generated in 0.00054s] {'id_1': 7}
+2025-06-15 15:17:45,473 - INFO - ROLLBACK
+2025-06-15 15:17:45,484 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:17:46,490 - INFO - BEGIN (implicit)
+2025-06-15 15:17:46,491 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:17:46,491 - INFO - [cached since 1.025s ago] {'id_1': 6}
+2025-06-15 15:17:46,493 - INFO - ROLLBACK
+2025-06-15 15:17:46,771 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:19:26,537 - INFO - 用户 6 断开连接
+2025-06-15 15:19:26,550 - INFO - BEGIN (implicit)
+2025-06-15 15:19:26,551 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:19:26,551 - INFO - [cached since 101.1s ago] {'id_1': 7}
+2025-06-15 15:19:26,554 - INFO - ROLLBACK
+2025-06-15 15:19:26,555 - INFO - 用户 7 断开连接
+2025-06-15 15:19:26,571 - INFO - BEGIN (implicit)
+2025-06-15 15:19:26,572 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:19:26,572 - INFO - [cached since 101.1s ago] {'id_1': 6}
+2025-06-15 15:19:26,575 - INFO - ROLLBACK
+2025-06-15 15:19:26,598 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:19:26,604 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:19:30,261 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:19:30,448 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:19:32,005 - INFO - 用户 6 断开连接
+2025-06-15 15:19:32,008 - INFO - 用户 6 断开连接
+2025-06-15 15:19:32,388 - INFO - BEGIN (implicit)
+2025-06-15 15:19:32,395 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:19:32,395 - INFO - [cached since 106.9s ago] {'id_1': 7}
+2025-06-15 15:19:32,398 - INFO - ROLLBACK
+2025-06-15 15:19:32,413 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:19:39,228 - INFO - 收到消息 from 6 to 7: {'id': 1749971979226, 'text': '55343', 'time': '2025-06-15T07:19:39.226Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:19:42,330 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:19:47,348 - INFO - 用户 6 断开连接
+2025-06-15 15:19:47,802 - INFO - BEGIN (implicit)
+2025-06-15 15:19:47,803 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:19:47,806 - INFO - [cached since 122.3s ago] {'id_1': 7}
+2025-06-15 15:19:47,832 - INFO - ROLLBACK
+2025-06-15 15:19:47,856 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:19:56,249 - INFO - 用户 7 断开连接
+2025-06-15 15:19:56,252 - INFO - 用户 7 断开连接
+2025-06-15 15:19:57,539 - INFO - BEGIN (implicit)
+2025-06-15 15:19:57,539 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:19:57,540 - INFO - [cached since 132.1s ago] {'id_1': 6}
+2025-06-15 15:19:57,567 - INFO - ROLLBACK
+2025-06-15 15:19:57,613 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:20:37,947 - INFO - 用户 6 断开连接
+2025-06-15 15:20:37,956 - INFO - BEGIN (implicit)
+2025-06-15 15:20:37,957 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:20:37,957 - INFO - [cached since 172.5s ago] {'id_1': 7}
+2025-06-15 15:20:37,961 - INFO - ROLLBACK
+2025-06-15 15:20:37,988 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:20:39,905 - INFO - 用户 7 断开连接
+2025-06-15 15:20:39,914 - INFO - BEGIN (implicit)
+2025-06-15 15:20:39,914 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:20:39,915 - INFO - [cached since 174.4s ago] {'id_1': 6}
+2025-06-15 15:20:39,917 - INFO - ROLLBACK
+2025-06-15 15:20:39,935 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:20:40,971 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:20:41,288 - INFO - 用户 6 断开连接
+2025-06-15 15:20:41,291 - INFO - 用户 6 断开连接
+2025-06-15 15:20:41,631 - INFO - BEGIN (implicit)
+2025-06-15 15:20:41,632 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:20:41,634 - INFO - [cached since 176.2s ago] {'id_1': 7}
+2025-06-15 15:20:41,637 - INFO - ROLLBACK
+2025-06-15 15:20:41,646 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:20:47,731 - INFO - 收到消息 from 6 to 7: {'id': 1749972047731, 'text': '13232', 'time': '2025-06-15T07:20:47.731Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:20:50,753 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:20:59,622 - INFO - 用户 6 断开连接
+2025-06-15 15:20:59,841 - INFO - BEGIN (implicit)
+2025-06-15 15:20:59,842 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:20:59,842 - INFO - [cached since 194.4s ago] {'id_1': 7}
+2025-06-15 15:20:59,847 - INFO - ROLLBACK
+2025-06-15 15:20:59,856 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:21:53,826 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:23:21,420 - INFO - 用户 7 断开连接
+2025-06-15 15:23:21,421 - INFO - 用户 6 断开连接
+2025-06-15 15:23:21,424 - INFO - 用户 7 断开连接
+2025-06-15 15:23:21,989 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 15:23:21,991 - INFO - Closing down clientserver connection
+2025-06-15 15:23:21,991 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 15:23:21,994 - INFO - Closing down clientserver connection
+2025-06-15 15:23:37,444 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:23:58,820 - INFO - 用户 6 断开连接
+2025-06-15 15:23:59,067 - INFO - SELECT DATABASE()
+2025-06-15 15:23:59,068 - INFO - [raw sql] {}
+2025-06-15 15:23:59,070 - INFO - SELECT @@sql_mode
+2025-06-15 15:23:59,071 - INFO - [raw sql] {}
+2025-06-15 15:23:59,076 - INFO - SELECT @@lower_case_table_names
+2025-06-15 15:23:59,076 - INFO - [raw sql] {}
+2025-06-15 15:23:59,079 - INFO - BEGIN (implicit)
+2025-06-15 15:23:59,086 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:23:59,086 - INFO - [generated in 0.00032s] {'id_1': 7}
+2025-06-15 15:23:59,091 - INFO - ROLLBACK
+2025-06-15 15:23:59,099 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:24:11,899 - INFO - 收到消息 from 6 to 7: {'id': 1749972251898, 'text': '34343', 'time': '2025-06-15T07:24:11.898Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:24:11,899 - INFO - 目标用户 7 离线，消息将存储为离线消息
+2025-06-15 15:24:14,965 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:24:26,065 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:24:26,091 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:27:33,526 - INFO - 用户 7 断开连接
+2025-06-15 15:27:33,535 - INFO - 用户 6 断开连接
+2025-06-15 15:27:33,538 - INFO - BEGIN (implicit)
+2025-06-15 15:27:33,539 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:27:33,539 - INFO - [cached since 214.5s ago] {'id_1': 6}
+2025-06-15 15:27:33,542 - INFO - ROLLBACK
+2025-06-15 15:27:33,548 - INFO - BEGIN (implicit)
+2025-06-15 15:27:33,548 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:27:33,549 - INFO - [cached since 214.5s ago] {'id_1': 7}
+2025-06-15 15:27:33,552 - INFO - ROLLBACK
+2025-06-15 15:27:33,588 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:27:33,711 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:27:36,492 - INFO - 用户 6 断开连接
+2025-06-15 15:27:38,205 - INFO - BEGIN (implicit)
+2025-06-15 15:27:38,206 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:27:38,207 - INFO - [cached since 219.1s ago] {'id_1': 7}
+2025-06-15 15:27:38,213 - INFO - ROLLBACK
+2025-06-15 15:27:38,230 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:27:45,201 - INFO - 收到消息 from 6 to 7: {'id': 1749972465199, 'text': '13223', 'time': '2025-06-15T07:27:45.199Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:27:48,221 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:28:28,351 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:28:43,313 - INFO - 收到消息 from 7 to 6: {'id': 1749972523312, 'text': '787', 'time': '2025-06-15T07:28:43.312Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 15:28:46,347 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:31:47,404 - INFO - 用户 7 断开连接
+2025-06-15 15:31:47,406 - INFO - 用户 7 断开连接
+2025-06-15 15:31:47,408 - INFO - 用户 7 断开连接
+2025-06-15 15:31:47,423 - INFO - 用户 6 断开连接
+2025-06-15 15:31:49,466 - INFO - BEGIN (implicit)
+2025-06-15 15:31:49,466 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:31:49,467 - INFO - [cached since 470.4s ago] {'id_1': 7}
+2025-06-15 15:31:49,471 - INFO - ROLLBACK
+2025-06-15 15:31:49,491 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:31:52,521 - INFO - BEGIN (implicit)
+2025-06-15 15:31:52,522 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:31:52,522 - INFO - [cached since 473.4s ago] {'id_1': 6}
+2025-06-15 15:31:52,526 - INFO - ROLLBACK
+2025-06-15 15:31:52,578 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:32:03,682 - INFO - 收到消息 from 7 to 6: {'id': 1749972723682, 'text': '89789', 'time': '2025-06-15T07:32:03.682Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 15:32:06,713 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:33:29,479 - INFO - 用户 6 断开连接
+2025-06-15 15:33:29,699 - INFO - 用户 7 断开连接
+2025-06-15 15:33:31,460 - INFO - BEGIN (implicit)
+2025-06-15 15:33:31,461 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:33:31,462 - INFO - [cached since 572.4s ago] {'id_1': 7}
+2025-06-15 15:33:31,466 - INFO - ROLLBACK
+2025-06-15 15:33:31,489 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:33:32,716 - INFO - BEGIN (implicit)
+2025-06-15 15:33:32,716 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:33:32,717 - INFO - [cached since 573.6s ago] {'id_1': 6}
+2025-06-15 15:33:32,720 - INFO - ROLLBACK
+2025-06-15 15:33:32,762 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:33:42,690 - INFO - 收到消息 from 7 to 6: {'id': 1749972822688, 'text': '6767', 'time': '2025-06-15T07:33:42.688Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 15:33:45,718 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:37:42,100 - INFO - 用户 6 断开连接
+2025-06-15 15:37:42,147 - INFO - 用户 7 断开连接
+2025-06-15 15:37:43,442 - INFO - BEGIN (implicit)
+2025-06-15 15:37:43,443 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:37:43,443 - INFO - [cached since 824.4s ago] {'id_1': 7}
+2025-06-15 15:37:43,445 - INFO - ROLLBACK
+2025-06-15 15:37:43,460 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:37:47,441 - INFO - BEGIN (implicit)
+2025-06-15 15:37:47,441 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:37:47,442 - INFO - [cached since 828.4s ago] {'id_1': 6}
+2025-06-15 15:37:47,445 - INFO - ROLLBACK
+2025-06-15 15:37:47,478 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:39:08,701 - INFO - 用户 7 断开连接
+2025-06-15 15:39:08,704 - INFO - 用户 6 断开连接
+2025-06-15 15:39:09,506 - INFO - BEGIN (implicit)
+2025-06-15 15:39:09,507 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:39:09,507 - INFO - [cached since 910.4s ago] {'id_1': 7}
+2025-06-15 15:39:09,511 - INFO - ROLLBACK
+2025-06-15 15:39:09,529 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:39:13,519 - INFO - BEGIN (implicit)
+2025-06-15 15:39:13,519 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:39:13,520 - INFO - [cached since 914.4s ago] {'id_1': 6}
+2025-06-15 15:39:13,522 - INFO - ROLLBACK
+2025-06-15 15:39:13,602 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:39:17,511 - INFO - 用户 6 断开连接
+2025-06-15 15:39:19,209 - INFO - BEGIN (implicit)
+2025-06-15 15:39:19,210 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:39:19,210 - INFO - [cached since 920.1s ago] {'id_1': 7}
+2025-06-15 15:39:19,213 - INFO - ROLLBACK
+2025-06-15 15:39:19,278 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:39:37,284 - INFO - 收到消息 from 6 to 7: {'id': 1749973177281, 'text': '55656', 'time': '2025-06-15T07:39:37.281Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:39:40,306 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:39:54,713 - INFO - 收到消息 from 6 to 7: {'id': 1749973194710, 'text': '语言', 'time': '2025-06-15T07:39:54.710Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:39:57,751 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:41:43,974 - INFO - 用户 6 断开连接
+2025-06-15 15:41:43,980 - INFO - 用户 7 断开连接
+2025-06-15 15:41:43,985 - INFO - BEGIN (implicit)
+2025-06-15 15:41:43,986 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:41:43,986 - INFO - [cached since 1065s ago] {'id_1': 7}
+2025-06-15 15:41:43,988 - INFO - ROLLBACK
+2025-06-15 15:41:44,008 - INFO - BEGIN (implicit)
+2025-06-15 15:41:44,008 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:41:44,009 - INFO - [cached since 1065s ago] {'id_1': 6}
+2025-06-15 15:41:44,011 - INFO - ROLLBACK
+2025-06-15 15:41:44,198 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:41:44,212 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:41:47,450 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:41:47,460 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:41:54,920 - INFO - 用户 6 断开连接
+2025-06-15 15:41:54,936 - INFO - 用户 6 断开连接
+2025-06-15 15:41:56,580 - INFO - BEGIN (implicit)
+2025-06-15 15:41:56,581 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:41:56,584 - INFO - [cached since 1077s ago] {'id_1': 7}
+2025-06-15 15:41:56,592 - INFO - ROLLBACK
+2025-06-15 15:41:56,624 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:42:06,074 - INFO - 收到消息 from 6 to 7: {'id': 1749973326071, 'text': '67676', 'time': '2025-06-15T07:42:06.071Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:42:09,121 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:42:17,540 - INFO - 收到消息 from 6 to 7: {'id': 1749973337538, 'text': '6757', 'time': '2025-06-15T07:42:17.538Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:42:20,572 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:43:47,025 - INFO - 用户 7 断开连接
+2025-06-15 15:43:47,028 - INFO - 用户 7 断开连接
+2025-06-15 15:43:47,050 - INFO - 用户 6 断开连接
+2025-06-15 15:43:53,198 - INFO - BEGIN (implicit)
+2025-06-15 15:43:53,198 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:43:53,198 - INFO - [cached since 1194s ago] {'id_1': 6}
+2025-06-15 15:43:53,203 - INFO - ROLLBACK
+2025-06-15 15:43:53,267 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:43:53,489 - INFO - BEGIN (implicit)
+2025-06-15 15:43:53,490 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:43:53,490 - INFO - [cached since 1194s ago] {'id_1': 7}
+2025-06-15 15:43:53,494 - INFO - ROLLBACK
+2025-06-15 15:43:53,518 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:45:44,549 - INFO - 用户 6 断开连接
+2025-06-15 15:45:46,328 - INFO - BEGIN (implicit)
+2025-06-15 15:45:46,329 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:45:46,329 - INFO - [cached since 1307s ago] {'id_1': 7}
+2025-06-15 15:45:46,332 - INFO - ROLLBACK
+2025-06-15 15:45:46,380 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:46:04,678 - INFO - 收到消息 from 6 to 7: {'id': 1749973564677, 'text': '32323', 'time': '2025-06-15T07:46:04.677Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:46:07,721 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:47:09,754 - INFO - 用户 6 断开连接
+2025-06-15 15:47:09,801 - INFO - BEGIN (implicit)
+2025-06-15 15:47:09,802 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:47:09,802 - INFO - [cached since 1391s ago] {'id_1': 7}
+2025-06-15 15:47:09,804 - INFO - ROLLBACK
+2025-06-15 15:47:09,849 - INFO - 用户 7 断开连接
+2025-06-15 15:47:09,913 - INFO - BEGIN (implicit)
+2025-06-15 15:47:09,913 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:47:09,914 - INFO - [cached since 1391s ago] {'id_1': 6}
+2025-06-15 15:47:09,916 - INFO - ROLLBACK
+2025-06-15 15:47:10,381 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:47:10,386 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:47:12,303 - INFO - 用户 6 断开连接
+2025-06-15 15:47:12,312 - INFO - BEGIN (implicit)
+2025-06-15 15:47:12,313 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:47:12,313 - INFO - [cached since 1393s ago] {'id_1': 7}
+2025-06-15 15:47:12,315 - INFO - ROLLBACK
+2025-06-15 15:47:12,320 - INFO - 用户 7 断开连接
+2025-06-15 15:47:12,330 - INFO - BEGIN (implicit)
+2025-06-15 15:47:12,331 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:47:12,331 - INFO - [cached since 1393s ago] {'id_1': 6}
+2025-06-15 15:47:12,333 - INFO - ROLLBACK
+2025-06-15 15:47:12,352 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:47:12,360 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:47:13,392 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:47:13,479 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:47:15,351 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:47:15,460 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:47:22,249 - INFO - 收到消息 from 6 to 7: {'id': 1749973642248, 'text': '7878', 'time': '2025-06-15T07:47:22.248Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 15:47:25,271 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:50:57,788 - INFO - 用户 6 断开连接
+2025-06-15 15:50:57,789 - INFO - 用户 6 断开连接
+2025-06-15 15:50:57,791 - INFO - 用户 7 断开连接
+2025-06-15 15:50:57,793 - INFO - 用户 7 断开连接
+2025-06-15 15:50:57,794 - INFO - 用户 7 断开连接
+2025-06-15 15:50:57,795 - INFO - 用户 6 断开连接
+2025-06-15 15:50:58,510 - INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\pyspark\errors\exceptions\captured.py", line 169, in deco
+    return f(*a, **kw)
+  File "D:\conda\lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 15:50:58,515 - INFO - Closing down clientserver connection
+2025-06-15 15:51:10,077 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:51:10,114 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:51:11,452 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:51:11,458 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:51:13,462 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:51:13,467 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:52:18,921 - INFO - 用户 7 断开连接
+2025-06-15 15:52:18,924 - INFO - 用户 7 断开连接
+2025-06-15 15:52:18,925 - INFO - 用户 7 断开连接
+2025-06-15 15:52:20,499 - INFO - SELECT DATABASE()
+2025-06-15 15:52:20,499 - INFO - [raw sql] {}
+2025-06-15 15:52:20,501 - INFO - SELECT @@sql_mode
+2025-06-15 15:52:20,501 - INFO - [raw sql] {}
+2025-06-15 15:52:20,503 - INFO - SELECT @@lower_case_table_names
+2025-06-15 15:52:20,503 - INFO - [raw sql] {}
+2025-06-15 15:52:20,505 - INFO - BEGIN (implicit)
+2025-06-15 15:52:20,514 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 15:52:20,517 - INFO - [generated in 0.00309s] {'id_1': 6}
+2025-06-15 15:52:20,525 - INFO - ROLLBACK
+2025-06-15 15:52:20,659 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:52:28,287 - INFO - 收到消息 from 7 to 6: {'id': 1749973948286, 'text': '000', 'time': '2025-06-15T07:52:28.286Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 15:52:31,318 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:54:48,471 - INFO - 用户 7 断开连接
+2025-06-15 15:54:48,472 - INFO - 用户 6 断开连接
+2025-06-15 15:54:48,474 - INFO - 用户 6 断开连接
+2025-06-15 15:54:48,475 - INFO - 用户 6 断开连接
+2025-06-15 15:54:49,055 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 15:54:49,058 - INFO - Closing down clientserver connection
+2025-06-15 15:54:49,058 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 15:54:49,060 - INFO - Closing down clientserver connection
+2025-06-15 15:54:58,979 - INFO - 用户 7 连接到目标 6
+2025-06-15 15:54:59,120 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:55:00,452 - INFO - 用户 6 连接到目标 7
+2025-06-15 15:55:02,450 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:00:00,556 - INFO - 用户 6 断开连接
+2025-06-15 16:00:00,558 - INFO - 用户 7 断开连接
+2025-06-15 16:00:00,559 - INFO - 用户 6 断开连接
+2025-06-15 16:00:00,560 - INFO - 用户 6 断开连接
+2025-06-15 16:00:01,103 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 16:00:01,105 - INFO - Closing down clientserver connection
+2025-06-15 16:00:01,105 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 16:00:01,106 - INFO - Closing down clientserver connection
+2025-06-15 16:00:11,521 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:00:11,566 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:00:12,469 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:00:13,717 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:00:46,331 - INFO - 用户 6 断开连接
+2025-06-15 16:00:46,333 - INFO - 用户 6 断开连接
+2025-06-15 16:00:46,335 - INFO - 用户 7 断开连接
+2025-06-15 16:00:46,337 - INFO - 用户 6 断开连接
+2025-06-15 16:00:47,010 - INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\pyspark\errors\exceptions\captured.py", line 169, in deco
+    return f(*a, **kw)
+  File "D:\conda\lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 16:00:47,018 - INFO - Closing down clientserver connection
+2025-06-15 16:00:56,480 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:00:56,584 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:00:57,455 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:00:58,753 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:01:10,318 - INFO - 用户 6 断开连接
+2025-06-15 16:01:10,355 - INFO - 用户 6 断开连接
+2025-06-15 16:01:10,357 - INFO - 用户 6 断开连接
+2025-06-15 16:01:12,060 - INFO - SELECT DATABASE()
+2025-06-15 16:01:12,060 - INFO - [raw sql] {}
+2025-06-15 16:01:12,061 - INFO - SELECT @@sql_mode
+2025-06-15 16:01:12,062 - INFO - [raw sql] {}
+2025-06-15 16:01:12,062 - INFO - SELECT @@lower_case_table_names
+2025-06-15 16:01:12,064 - INFO - [raw sql] {}
+2025-06-15 16:01:12,066 - INFO - BEGIN (implicit)
+2025-06-15 16:01:12,075 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:01:12,076 - INFO - [generated in 0.00049s] {'id_1': 7}
+2025-06-15 16:01:12,078 - INFO - ROLLBACK
+2025-06-15 16:01:12,091 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:01:20,236 - INFO - 收到消息 from 6 to 7: {'id': 1749974480234, 'text': '000', 'time': '2025-06-15T08:01:20.234Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 16:01:23,273 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:01:34,428 - INFO - 收到消息 from 6 to 7: {'id': 1749974494426, 'text': '0089', 'time': '2025-06-15T08:01:34.426Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 16:01:37,456 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:02:52,719 - INFO - 用户 7 断开连接
+2025-06-15 16:02:52,720 - INFO - 用户 6 断开连接
+2025-06-15 16:02:53,337 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 16:02:53,339 - INFO - Closing down clientserver connection
+2025-06-15 16:02:53,339 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 16:02:53,341 - INFO - Closing down clientserver connection
+2025-06-15 16:03:03,474 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:03:03,478 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:05:49,955 - INFO - 用户 7 断开连接
+2025-06-15 16:05:49,956 - INFO - 用户 6 断开连接
+2025-06-15 16:05:50,503 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 16:05:50,505 - INFO - Closing down clientserver connection
+2025-06-15 16:05:50,505 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 16:05:50,506 - INFO - Closing down clientserver connection
+2025-06-15 16:05:59,469 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:05:59,485 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:06:08,013 - INFO - 用户 7 断开连接
+2025-06-15 16:06:09,568 - INFO - SELECT DATABASE()
+2025-06-15 16:06:09,572 - INFO - [raw sql] {}
+2025-06-15 16:06:09,574 - INFO - SELECT @@sql_mode
+2025-06-15 16:06:09,575 - INFO - [raw sql] {}
+2025-06-15 16:06:09,576 - INFO - SELECT @@lower_case_table_names
+2025-06-15 16:06:09,577 - INFO - [raw sql] {}
+2025-06-15 16:06:09,579 - INFO - BEGIN (implicit)
+2025-06-15 16:06:09,637 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:06:09,637 - INFO - [generated in 0.00074s] {'id_1': 6}
+2025-06-15 16:06:09,643 - INFO - ROLLBACK
+2025-06-15 16:06:09,722 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:06:16,728 - INFO - 收到消息 from 7 to 6: {'id': 1749974776727, 'text': '6767', 'time': '2025-06-15T08:06:16.727Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 16:06:21,952 - INFO - 收到消息 from 7 to 6: {'id': 1749974781950, 'text': '990', 'time': '2025-06-15T08:06:21.950Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 16:07:08,635 - INFO - 用户 7 断开连接
+2025-06-15 16:07:10,101 - INFO - BEGIN (implicit)
+2025-06-15 16:07:10,103 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:07:10,103 - INFO - [cached since 60.47s ago] {'id_1': 6}
+2025-06-15 16:07:10,108 - INFO - ROLLBACK
+2025-06-15 16:07:10,211 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:07:20,770 - INFO - 用户 6 断开连接
+2025-06-15 16:07:21,348 - INFO - BEGIN (implicit)
+2025-06-15 16:07:21,350 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:07:21,352 - INFO - [cached since 71.71s ago] {'id_1': 7}
+2025-06-15 16:07:21,354 - INFO - ROLLBACK
+2025-06-15 16:07:21,362 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:07:31,491 - INFO - 用户 6 断开连接
+2025-06-15 16:07:33,212 - INFO - BEGIN (implicit)
+2025-06-15 16:07:33,213 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:07:33,213 - INFO - [cached since 83.58s ago] {'id_1': 7}
+2025-06-15 16:07:33,221 - INFO - ROLLBACK
+2025-06-15 16:07:33,275 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:08:11,389 - INFO - 收到消息 from 6 to 7: {'id': 1749974891387, 'text': '099--', 'time': '2025-06-15T08:08:11.387Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 16:08:18,987 - INFO - 用户 6 断开连接
+2025-06-15 16:08:20,713 - INFO - BEGIN (implicit)
+2025-06-15 16:08:20,714 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:08:20,714 - INFO - [cached since 131.1s ago] {'id_1': 7}
+2025-06-15 16:08:20,717 - INFO - ROLLBACK
+2025-06-15 16:08:20,778 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:08:29,885 - INFO - 收到消息 from 6 to 7: {'id': 1749974909883, 'text': '000', 'time': '2025-06-15T08:08:29.883Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 16:08:33,569 - INFO - 用户 6 断开连接
+2025-06-15 16:08:35,303 - INFO - BEGIN (implicit)
+2025-06-15 16:08:35,304 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:08:35,304 - INFO - [cached since 145.7s ago] {'id_1': 7}
+2025-06-15 16:08:35,310 - INFO - ROLLBACK
+2025-06-15 16:08:35,367 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:13:45,765 - INFO - 收到消息 from 6 to 7: {'id': 1749975225761, 'text': '微软他认为', 'time': '2025-06-15T08:13:45.761Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 16:14:08,734 - INFO - 收到消息 from 7 to 6: {'id': 1749975248733, 'text': '6666', 'time': '2025-06-15T08:14:08.733Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 16:14:19,231 - INFO - 用户 7 断开连接
+2025-06-15 16:14:20,002 - INFO - BEGIN (implicit)
+2025-06-15 16:14:20,003 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:14:20,003 - INFO - [cached since 490.4s ago] {'id_1': 6}
+2025-06-15 16:14:20,006 - INFO - ROLLBACK
+2025-06-15 16:14:20,101 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:19:16,014 - INFO - 用户 7 断开连接
+2025-06-15 16:19:16,020 - INFO - 用户 6 断开连接
+2025-06-15 16:19:19,265 - INFO - BEGIN (implicit)
+2025-06-15 16:19:19,266 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:19:19,266 - INFO - [cached since 789.6s ago] {'id_1': 6}
+2025-06-15 16:19:19,269 - INFO - ROLLBACK
+2025-06-15 16:19:19,295 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:19:21,696 - INFO - BEGIN (implicit)
+2025-06-15 16:19:21,697 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:19:21,697 - INFO - [cached since 792.1s ago] {'id_1': 7}
+2025-06-15 16:19:21,699 - INFO - ROLLBACK
+2025-06-15 16:19:21,716 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:22:31,960 - INFO - 用户 7 断开连接
+2025-06-15 16:22:31,966 - INFO - 用户 6 断开连接
+2025-06-15 16:22:35,178 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:22:35,461 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:23:04,190 - INFO - 用户 6 断开连接
+2025-06-15 16:23:06,322 - INFO - BEGIN (implicit)
+2025-06-15 16:23:06,323 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:23:06,323 - INFO - [cached since 1017s ago] {'id_1': 7}
+2025-06-15 16:23:06,326 - INFO - ROLLBACK
+2025-06-15 16:23:06,343 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:23:14,316 - INFO - 用户 6 断开连接
+2025-06-15 16:23:14,730 - INFO - BEGIN (implicit)
+2025-06-15 16:23:14,731 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:23:14,731 - INFO - [cached since 1025s ago] {'id_1': 7}
+2025-06-15 16:23:14,734 - INFO - ROLLBACK
+2025-06-15 16:23:14,746 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:23:20,941 - INFO - 用户 7 断开连接
+2025-06-15 16:23:21,398 - INFO - BEGIN (implicit)
+2025-06-15 16:23:21,398 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:23:21,399 - INFO - [cached since 1032s ago] {'id_1': 6}
+2025-06-15 16:23:21,402 - INFO - ROLLBACK
+2025-06-15 16:23:21,500 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:24:54,418 - INFO - 用户 6 断开连接
+2025-06-15 16:24:54,426 - INFO - 用户 7 断开连接
+2025-06-15 16:24:59,948 - INFO - BEGIN (implicit)
+2025-06-15 16:24:59,948 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:24:59,949 - INFO - [cached since 1130s ago] {'id_1': 7}
+2025-06-15 16:24:59,952 - INFO - ROLLBACK
+2025-06-15 16:24:59,984 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:25:01,201 - INFO - BEGIN (implicit)
+2025-06-15 16:25:01,202 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:25:01,202 - INFO - [cached since 1132s ago] {'id_1': 6}
+2025-06-15 16:25:01,205 - INFO - ROLLBACK
+2025-06-15 16:25:01,303 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:25:15,597 - INFO - 用户 7 断开连接
+2025-06-15 16:25:16,204 - INFO - 用户 6 断开连接
+2025-06-15 16:25:18,604 - INFO - BEGIN (implicit)
+2025-06-15 16:25:18,605 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:25:18,605 - INFO - [cached since 1149s ago] {'id_1': 7}
+2025-06-15 16:25:18,609 - INFO - ROLLBACK
+2025-06-15 16:25:18,631 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:25:21,371 - INFO - BEGIN (implicit)
+2025-06-15 16:25:21,372 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:25:21,372 - INFO - [cached since 1152s ago] {'id_1': 6}
+2025-06-15 16:25:21,376 - INFO - ROLLBACK
+2025-06-15 16:25:21,428 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:26:44,813 - INFO - 用户 7 断开连接
+2025-06-15 16:26:44,815 - INFO - 用户 6 断开连接
+2025-06-15 16:26:55,972 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:26:55,976 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:27:08,634 - INFO - 用户 6 断开连接
+2025-06-15 16:27:10,430 - INFO - SELECT DATABASE()
+2025-06-15 16:27:10,430 - INFO - [raw sql] {}
+2025-06-15 16:27:10,433 - INFO - SELECT @@sql_mode
+2025-06-15 16:27:10,433 - INFO - [raw sql] {}
+2025-06-15 16:27:10,435 - INFO - SELECT @@lower_case_table_names
+2025-06-15 16:27:10,436 - INFO - [raw sql] {}
+2025-06-15 16:27:10,438 - INFO - BEGIN (implicit)
+2025-06-15 16:27:10,445 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:27:10,446 - INFO - [generated in 0.00080s] {'id_1': 7}
+2025-06-15 16:27:10,449 - INFO - ROLLBACK
+2025-06-15 16:27:10,469 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:29:01,713 - INFO - 用户 7 断开连接
+2025-06-15 16:29:01,714 - INFO - 用户 6 断开连接
+2025-06-15 16:29:02,317 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 16:29:02,319 - INFO - Closing down clientserver connection
+2025-06-15 16:29:02,319 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 16:29:02,321 - INFO - Closing down clientserver connection
+2025-06-15 16:29:11,465 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:29:11,468 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:29:15,988 - INFO - 用户 6 断开连接
+2025-06-15 16:29:17,927 - INFO - SELECT DATABASE()
+2025-06-15 16:29:17,927 - INFO - [raw sql] {}
+2025-06-15 16:29:17,931 - INFO - SELECT @@sql_mode
+2025-06-15 16:29:17,932 - INFO - [raw sql] {}
+2025-06-15 16:29:17,933 - INFO - SELECT @@lower_case_table_names
+2025-06-15 16:29:17,934 - INFO - [raw sql] {}
+2025-06-15 16:29:17,938 - INFO - BEGIN (implicit)
+2025-06-15 16:29:17,962 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:29:17,963 - INFO - [generated in 0.00163s] {'id_1': 7}
+2025-06-15 16:29:17,968 - INFO - ROLLBACK
+2025-06-15 16:29:17,990 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:30:05,909 - INFO - 用户 7 断开连接
+2025-06-15 16:30:06,826 - INFO - BEGIN (implicit)
+2025-06-15 16:30:06,827 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:30:06,828 - INFO - [cached since 48.87s ago] {'id_1': 6}
+2025-06-15 16:30:06,832 - INFO - ROLLBACK
+2025-06-15 16:30:06,935 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:35:13,464 - INFO - 收到消息 from 6 to 7: {'id': 1749976513462, 'text': '水水水水', 'time': '2025-06-15T08:35:13.462Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 16:35:18,951 - INFO - 用户 7 断开连接
+2025-06-15 16:35:19,017 - INFO - BEGIN (implicit)
+2025-06-15 16:35:19,018 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:35:19,018 - INFO - [cached since 361.1s ago] {'id_1': 7}
+2025-06-15 16:35:19,020 - INFO - ROLLBACK
+2025-06-15 16:35:21,312 - INFO - BEGIN (implicit)
+2025-06-15 16:35:21,312 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:35:21,313 - INFO - [cached since 363.4s ago] {'id_1': 7}
+2025-06-15 16:35:21,320 - INFO - ROLLBACK
+2025-06-15 16:35:22,001 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:35:32,120 - INFO - 收到消息 from 6 to 7: {'id': 1749976530618, 'text': '1111', 'time': '2025-06-15T08:35:30.618Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 16:35:34,538 - INFO - BEGIN (implicit)
+2025-06-15 16:35:34,538 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:35:34,539 - INFO - [cached since 376.6s ago] {'id_1': 6}
+2025-06-15 16:35:34,542 - INFO - ROLLBACK
+2025-06-15 16:35:34,555 - INFO - 用户 7 连接到目标 6
+2025-06-15 16:36:14,007 - INFO - 用户 6 断开连接
+2025-06-15 16:36:15,393 - INFO - BEGIN (implicit)
+2025-06-15 16:36:15,394 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 16:36:15,394 - INFO - [cached since 417.4s ago] {'id_1': 7}
+2025-06-15 16:36:15,397 - INFO - ROLLBACK
+2025-06-15 16:36:15,447 - INFO - 用户 6 连接到目标 7
+2025-06-15 16:57:30,498 - INFO - 用户 6 断开连接
+2025-06-15 16:57:30,499 - INFO - 用户 7 断开连接
+2025-06-15 16:57:30,502 - INFO - 用户 7 断开连接
+2025-06-15 18:26:32,456 - INFO - 用户 6 连接到目标 7
+2025-06-15 18:26:33,373 - INFO - 用户 7 连接到目标 6
+2025-06-15 18:26:33,391 - INFO - 用户 7 连接到目标 6
+2025-06-15 18:37:52,586 - INFO - 用户 7 断开连接
+2025-06-15 18:37:52,590 - INFO - 用户 7 断开连接
+2025-06-15 18:37:53,277 - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "D:\conda\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 162, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 18:37:53,344 - INFO - BEGIN (implicit)
+2025-06-15 18:37:53,345 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 18:37:53,345 - INFO - [cached since 7715s ago] {'id_1': 6}
+2025-06-15 18:37:53,349 - INFO - ROLLBACK
+2025-06-15 18:37:53,386 - INFO - 用户 7 连接到目标 6
+2025-06-15 18:39:14,018 - INFO - 收到消息 from 7 to 6: {'id': 1749983954017, 'text': '一个人的命运啊，不在于自己的努力，更要考虑到历史的紧凑。这是一个老人说的，非常有哲理。个人命运前途在历史明确，时多么的微不足道。者有20个字数了码', 'time': '2025-06-15T10:39:14.017Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 18:39:27,188 - INFO - 用户 6 断开连接
+2025-06-15 18:39:27,730 - INFO - BEGIN (implicit)
+2025-06-15 18:39:27,730 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 18:39:27,731 - INFO - [cached since 7810s ago] {'id_1': 7}
+2025-06-15 18:39:27,733 - INFO - ROLLBACK
+2025-06-15 18:39:27,743 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:19:35,168 - INFO - 用户 7 断开连接
+2025-06-15 19:19:35,197 - INFO - 用户 6 断开连接
+2025-06-15 19:19:39,448 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:19:39,451 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:24:42,230 - INFO - 用户 6 断开连接
+2025-06-15 19:24:42,797 - INFO - BEGIN (implicit)
+2025-06-15 19:24:42,798 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:24:42,798 - INFO - [cached since 1.052e+04s ago] {'id_1': 7}
+2025-06-15 19:24:42,802 - INFO - ROLLBACK
+2025-06-15 19:24:42,812 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:24:53,843 - INFO - 用户 6 断开连接
+2025-06-15 19:24:54,064 - INFO - BEGIN (implicit)
+2025-06-15 19:24:54,066 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:24:54,067 - INFO - [cached since 1.054e+04s ago] {'id_1': 7}
+2025-06-15 19:24:54,071 - INFO - ROLLBACK
+2025-06-15 19:24:54,079 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:25:06,173 - INFO - 用户 7 断开连接
+2025-06-15 19:25:06,957 - INFO - BEGIN (implicit)
+2025-06-15 19:25:06,957 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:25:06,957 - INFO - [cached since 1.055e+04s ago] {'id_1': 6}
+2025-06-15 19:25:06,960 - INFO - ROLLBACK
+2025-06-15 19:25:07,069 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:25:13,236 - INFO - 用户 7 断开连接
+2025-06-15 19:25:13,581 - INFO - BEGIN (implicit)
+2025-06-15 19:25:13,582 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:25:13,583 - INFO - [cached since 1.056e+04s ago] {'id_1': 6}
+2025-06-15 19:25:13,588 - INFO - ROLLBACK
+2025-06-15 19:25:13,684 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:25:30,049 - INFO - 用户 7 断开连接
+2025-06-15 19:25:30,441 - INFO - BEGIN (implicit)
+2025-06-15 19:25:30,442 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:25:30,442 - INFO - [cached since 1.057e+04s ago] {'id_1': 6}
+2025-06-15 19:25:30,446 - INFO - ROLLBACK
+2025-06-15 19:25:30,507 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:27:02,835 - INFO - 用户 6 断开连接
+2025-06-15 19:27:03,010 - INFO - BEGIN (implicit)
+2025-06-15 19:27:03,011 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:27:03,011 - INFO - [cached since 1.067e+04s ago] {'id_1': 7}
+2025-06-15 19:27:03,014 - INFO - ROLLBACK
+2025-06-15 19:27:03,026 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:31:03,238 - INFO - 用户 6 断开连接
+2025-06-15 19:31:04,968 - INFO - BEGIN (implicit)
+2025-06-15 19:31:04,970 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:31:04,970 - INFO - [cached since 1.091e+04s ago] {'id_1': 7}
+2025-06-15 19:31:04,975 - INFO - ROLLBACK
+2025-06-15 19:31:05,032 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:31:15,105 - INFO - 用户 7 断开连接
+2025-06-15 19:31:16,596 - INFO - BEGIN (implicit)
+2025-06-15 19:31:16,597 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:31:16,598 - INFO - [cached since 1.092e+04s ago] {'id_1': 6}
+2025-06-15 19:31:16,604 - INFO - ROLLBACK
+2025-06-15 19:31:16,766 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:31:31,722 - INFO - 收到消息 from 6 to 7: {'id': 1749987091721, 'text': '看看看看', 'time': '2025-06-15T11:31:31.721Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 19:32:39,521 - INFO - 用户 6 断开连接
+2025-06-15 19:32:41,280 - INFO - BEGIN (implicit)
+2025-06-15 19:32:41,281 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:32:41,282 - INFO - [cached since 1.1e+04s ago] {'id_1': 7}
+2025-06-15 19:32:41,289 - INFO - ROLLBACK
+2025-06-15 19:32:41,346 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:32:50,514 - INFO - 用户 7 断开连接
+2025-06-15 19:32:52,109 - INFO - BEGIN (implicit)
+2025-06-15 19:32:52,110 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:32:52,112 - INFO - [cached since 1.101e+04s ago] {'id_1': 6}
+2025-06-15 19:32:52,142 - INFO - ROLLBACK
+2025-06-15 19:32:52,299 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:32:56,938 - INFO - 用户 7 断开连接
+2025-06-15 19:32:58,373 - INFO - BEGIN (implicit)
+2025-06-15 19:32:58,374 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:32:58,375 - INFO - [cached since 1.102e+04s ago] {'id_1': 6}
+2025-06-15 19:32:58,391 - INFO - ROLLBACK
+2025-06-15 19:32:58,550 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:33:09,413 - INFO - 收到消息 from 7 to 6: {'id': 1749987189411, 'text': '000', 'time': '2025-06-15T11:33:09.411Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:33:15,906 - INFO - 用户 7 断开连接
+2025-06-15 19:33:16,484 - INFO - BEGIN (implicit)
+2025-06-15 19:33:16,484 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:33:16,485 - INFO - [cached since 1.104e+04s ago] {'id_1': 6}
+2025-06-15 19:33:16,487 - INFO - ROLLBACK
+2025-06-15 19:33:16,574 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:33:21,904 - INFO - 用户 6 断开连接
+2025-06-15 19:33:23,770 - INFO - BEGIN (implicit)
+2025-06-15 19:33:23,772 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:33:23,772 - INFO - [cached since 1.105e+04s ago] {'id_1': 7}
+2025-06-15 19:33:23,802 - INFO - ROLLBACK
+2025-06-15 19:33:23,841 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:33:39,369 - INFO - 收到消息 from 6 to 7: {'id': 1749987219367, 'text': '试一试？', 'time': '2025-06-15T11:33:39.367Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 19:33:42,769 - INFO - 用户 6 断开连接
+2025-06-15 19:33:43,160 - INFO - BEGIN (implicit)
+2025-06-15 19:33:43,161 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:33:43,161 - INFO - [cached since 1.107e+04s ago] {'id_1': 7}
+2025-06-15 19:33:43,166 - INFO - ROLLBACK
+2025-06-15 19:33:43,175 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:33:51,574 - INFO - 用户 6 断开连接
+2025-06-15 19:33:51,734 - INFO - BEGIN (implicit)
+2025-06-15 19:33:51,734 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:33:51,735 - INFO - [cached since 1.107e+04s ago] {'id_1': 7}
+2025-06-15 19:33:51,736 - INFO - ROLLBACK
+2025-06-15 19:33:51,746 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:34:05,688 - INFO - 用户 7 断开连接
+2025-06-15 19:34:05,923 - INFO - BEGIN (implicit)
+2025-06-15 19:34:05,924 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:34:05,924 - INFO - [cached since 1.109e+04s ago] {'id_1': 6}
+2025-06-15 19:34:05,933 - INFO - ROLLBACK
+2025-06-15 19:34:05,972 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:34:12,512 - INFO - 收到消息 from 7 to 6: {'id': 1749987252512, 'text': '黑呵呵呵', 'time': '2025-06-15T11:34:12.512Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:34:15,029 - INFO - 用户 7 断开连接
+2025-06-15 19:34:15,410 - INFO - BEGIN (implicit)
+2025-06-15 19:34:15,412 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:34:15,412 - INFO - [cached since 1.11e+04s ago] {'id_1': 6}
+2025-06-15 19:34:15,416 - INFO - ROLLBACK
+2025-06-15 19:34:15,501 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:45:23,680 - INFO - 用户 6 断开连接
+2025-06-15 19:45:24,265 - INFO - BEGIN (implicit)
+2025-06-15 19:45:24,265 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:45:24,266 - INFO - [cached since 1.177e+04s ago] {'id_1': 7}
+2025-06-15 19:45:24,269 - INFO - ROLLBACK
+2025-06-15 19:45:24,281 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:45:33,895 - INFO - 收到消息 from 7 to 6: {'id': 1749987933894, 'text': '如题如题如题', 'time': '2025-06-15T11:45:33.894Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:45:38,176 - INFO - 用户 7 断开连接
+2025-06-15 19:45:39,746 - INFO - BEGIN (implicit)
+2025-06-15 19:45:39,747 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:45:39,753 - INFO - [cached since 1.178e+04s ago] {'id_1': 6}
+2025-06-15 19:45:39,759 - INFO - ROLLBACK
+2025-06-15 19:45:39,882 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:45:43,338 - INFO - 用户 7 断开连接
+2025-06-15 19:45:45,001 - INFO - BEGIN (implicit)
+2025-06-15 19:45:45,002 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:45:45,086 - INFO - [cached since 1.179e+04s ago] {'id_1': 6}
+2025-06-15 19:45:45,113 - INFO - ROLLBACK
+2025-06-15 19:45:45,179 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:45:48,727 - INFO - 用户 7 断开连接
+2025-06-15 19:45:50,345 - INFO - BEGIN (implicit)
+2025-06-15 19:45:50,359 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:45:50,367 - INFO - [cached since 1.179e+04s ago] {'id_1': 6}
+2025-06-15 19:45:50,380 - INFO - ROLLBACK
+2025-06-15 19:45:50,526 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:45:55,753 - INFO - 收到消息 from 7 to 6: {'id': 1749987955750, 'text': '45454', 'time': '2025-06-15T11:45:55.750Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:46:12,694 - INFO - 收到消息 from 7 to 6: {'id': 1749987972694, 'text': '788989', 'time': '2025-06-15T11:46:12.694Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:46:14,351 - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "D:\conda\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 162, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 19:46:19,075 - INFO - 用户 7 断开连接
+2025-06-15 19:46:20,106 - INFO - BEGIN (implicit)
+2025-06-15 19:46:20,109 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:46:20,110 - INFO - [cached since 1.182e+04s ago] {'id_1': 6}
+2025-06-15 19:46:20,122 - INFO - ROLLBACK
+2025-06-15 19:46:20,261 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:46:26,655 - INFO - 收到消息 from 7 to 6: {'id': 1749987986652, 'text': 'ilil', 'time': '2025-06-15T11:46:26.652Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:46:33,560 - INFO - 用户 7 断开连接
+2025-06-15 19:46:34,555 - INFO - BEGIN (implicit)
+2025-06-15 19:46:34,556 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:46:34,556 - INFO - [cached since 1.184e+04s ago] {'id_1': 6}
+2025-06-15 19:46:34,559 - INFO - ROLLBACK
+2025-06-15 19:46:34,706 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:46:40,522 - INFO - 收到消息 from 7 to 6: {'id': 1749988000518, 'text': '7899', 'time': '2025-06-15T11:46:40.518Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:46:43,772 - INFO - 用户 7 断开连接
+2025-06-15 19:46:44,916 - INFO - BEGIN (implicit)
+2025-06-15 19:46:44,917 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:46:44,918 - INFO - [cached since 1.185e+04s ago] {'id_1': 6}
+2025-06-15 19:46:44,941 - INFO - ROLLBACK
+2025-06-15 19:46:45,074 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:46:54,119 - INFO - 用户 6 断开连接
+2025-06-15 19:46:54,646 - INFO - BEGIN (implicit)
+2025-06-15 19:46:54,647 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:46:54,647 - INFO - [cached since 1.186e+04s ago] {'id_1': 7}
+2025-06-15 19:46:54,651 - INFO - ROLLBACK
+2025-06-15 19:46:54,662 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:47:02,844 - INFO - 用户 6 断开连接
+2025-06-15 19:47:03,192 - INFO - BEGIN (implicit)
+2025-06-15 19:47:03,193 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:47:03,193 - INFO - [cached since 1.187e+04s ago] {'id_1': 7}
+2025-06-15 19:47:03,201 - INFO - ROLLBACK
+2025-06-15 19:47:03,224 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:47:10,249 - INFO - 用户 7 断开连接
+2025-06-15 19:47:11,310 - INFO - BEGIN (implicit)
+2025-06-15 19:47:11,316 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:47:11,316 - INFO - [cached since 1.187e+04s ago] {'id_1': 6}
+2025-06-15 19:47:11,330 - INFO - ROLLBACK
+2025-06-15 19:47:11,441 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:47:17,738 - INFO - 用户 7 断开连接
+2025-06-15 19:47:18,927 - INFO - BEGIN (implicit)
+2025-06-15 19:47:18,928 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:47:18,929 - INFO - [cached since 1.188e+04s ago] {'id_1': 6}
+2025-06-15 19:47:18,936 - INFO - ROLLBACK
+2025-06-15 19:47:19,070 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:47:24,913 - INFO - 用户 6 断开连接
+2025-06-15 19:47:25,033 - INFO - BEGIN (implicit)
+2025-06-15 19:47:25,034 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:47:25,034 - INFO - [cached since 1.189e+04s ago] {'id_1': 7}
+2025-06-15 19:47:25,036 - INFO - ROLLBACK
+2025-06-15 19:47:25,046 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:47:56,902 - INFO - 用户 7 断开连接
+2025-06-15 19:47:58,099 - INFO - BEGIN (implicit)
+2025-06-15 19:47:58,107 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:47:58,107 - INFO - [cached since 1.192e+04s ago] {'id_1': 6}
+2025-06-15 19:47:58,112 - INFO - ROLLBACK
+2025-06-15 19:47:58,250 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:48:08,676 - INFO - 收到消息 from 7 to 6: {'id': 1749988088674, 'text': '999', 'time': '2025-06-15T11:48:08.674Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:48:13,136 - INFO - 用户 7 断开连接
+2025-06-15 19:48:14,742 - INFO - BEGIN (implicit)
+2025-06-15 19:48:14,745 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:48:14,746 - INFO - [cached since 1.194e+04s ago] {'id_1': 6}
+2025-06-15 19:48:14,760 - INFO - ROLLBACK
+2025-06-15 19:48:14,931 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:48:20,320 - INFO - 用户 6 断开连接
+2025-06-15 19:48:22,114 - INFO - BEGIN (implicit)
+2025-06-15 19:48:22,115 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:48:22,115 - INFO - [cached since 1.194e+04s ago] {'id_1': 7}
+2025-06-15 19:48:22,118 - INFO - ROLLBACK
+2025-06-15 19:48:22,177 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:48:29,266 - INFO - 收到消息 from 6 to 7: {'id': 1749988109265, 'text': '8889', 'time': '2025-06-15T11:48:29.265Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 19:48:31,055 - INFO - 用户 6 断开连接
+2025-06-15 19:48:32,739 - INFO - BEGIN (implicit)
+2025-06-15 19:48:32,740 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:48:32,740 - INFO - [cached since 1.195e+04s ago] {'id_1': 7}
+2025-06-15 19:48:32,747 - INFO - ROLLBACK
+2025-06-15 19:48:32,801 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:48:37,061 - INFO - 用户 6 断开连接
+2025-06-15 19:48:38,719 - INFO - BEGIN (implicit)
+2025-06-15 19:48:38,720 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:48:38,720 - INFO - [cached since 1.196e+04s ago] {'id_1': 7}
+2025-06-15 19:48:38,724 - INFO - ROLLBACK
+2025-06-15 19:48:38,783 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:48:42,133 - INFO - 用户 6 断开连接
+2025-06-15 19:48:43,957 - INFO - BEGIN (implicit)
+2025-06-15 19:48:43,958 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:48:43,958 - INFO - [cached since 1.197e+04s ago] {'id_1': 7}
+2025-06-15 19:48:43,964 - INFO - ROLLBACK
+2025-06-15 19:48:44,019 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:48:54,196 - INFO - 收到消息 from 6 to 7: {'id': 1749988134195, 'text': '86787', 'time': '2025-06-15T11:48:54.195Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 19:49:01,330 - INFO - 用户 6 断开连接
+2025-06-15 19:49:03,007 - INFO - BEGIN (implicit)
+2025-06-15 19:49:03,008 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:49:03,008 - INFO - [cached since 1.199e+04s ago] {'id_1': 7}
+2025-06-15 19:49:03,011 - INFO - ROLLBACK
+2025-06-15 19:49:03,080 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:49:11,104 - INFO - 用户 7 断开连接
+2025-06-15 19:49:12,791 - INFO - BEGIN (implicit)
+2025-06-15 19:49:12,793 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:49:12,799 - INFO - [cached since 1.199e+04s ago] {'id_1': 6}
+2025-06-15 19:49:12,817 - INFO - ROLLBACK
+2025-06-15 19:49:12,978 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:49:21,298 - INFO - 用户 6 断开连接
+2025-06-15 19:49:23,083 - INFO - BEGIN (implicit)
+2025-06-15 19:49:23,083 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:49:23,084 - INFO - [cached since 1.201e+04s ago] {'id_1': 7}
+2025-06-15 19:49:23,088 - INFO - ROLLBACK
+2025-06-15 19:49:23,156 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:50:51,454 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:50:51,461 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:51:00,728 - INFO - 用户 7 断开连接
+2025-06-15 19:51:02,230 - INFO - SELECT DATABASE()
+2025-06-15 19:51:02,230 - INFO - [raw sql] {}
+2025-06-15 19:51:02,232 - INFO - SELECT @@sql_mode
+2025-06-15 19:51:02,233 - INFO - [raw sql] {}
+2025-06-15 19:51:02,234 - INFO - SELECT @@lower_case_table_names
+2025-06-15 19:51:02,235 - INFO - [raw sql] {}
+2025-06-15 19:51:02,237 - INFO - BEGIN (implicit)
+2025-06-15 19:51:02,247 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:51:02,248 - INFO - [generated in 0.00049s] {'id_1': 6}
+2025-06-15 19:51:02,276 - INFO - ROLLBACK
+2025-06-15 19:51:02,418 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:51:08,602 - INFO - 用户 7 断开连接
+2025-06-15 19:51:10,023 - INFO - BEGIN (implicit)
+2025-06-15 19:51:10,024 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:51:10,025 - INFO - [cached since 7.779s ago] {'id_1': 6}
+2025-06-15 19:51:10,037 - INFO - ROLLBACK
+2025-06-15 19:51:10,176 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:51:20,882 - INFO - 收到消息 from 7 to 6: {'id': 1749988280879, 'text': '34343', 'time': '2025-06-15T11:51:20.879Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:51:24,553 - INFO - 收到消息 from 7 to 6: {'id': 1749988284552, 'text': '威威', 'time': '2025-06-15T11:51:24.552Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:51:26,678 - INFO - 用户 7 断开连接
+2025-06-15 19:51:28,148 - INFO - BEGIN (implicit)
+2025-06-15 19:51:28,149 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:51:28,149 - INFO - [cached since 25.9s ago] {'id_1': 6}
+2025-06-15 19:51:28,154 - INFO - ROLLBACK
+2025-06-15 19:51:28,305 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:51:35,074 - INFO - 用户 7 断开连接
+2025-06-15 19:51:36,305 - INFO - BEGIN (implicit)
+2025-06-15 19:51:36,306 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:51:36,306 - INFO - [cached since 34.06s ago] {'id_1': 6}
+2025-06-15 19:51:36,309 - INFO - ROLLBACK
+2025-06-15 19:51:36,476 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:52:43,638 - INFO - 用户 7 断开连接
+2025-06-15 19:52:43,639 - INFO - 用户 6 断开连接
+2025-06-15 19:52:44,247 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 19:52:44,281 - INFO - Closing down clientserver connection
+2025-06-15 19:52:44,281 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 19:52:44,297 - INFO - Closing down clientserver connection
+2025-06-15 19:52:54,472 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:52:54,476 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:56:26,859 - INFO - 用户 6 断开连接
+2025-06-15 19:56:26,860 - INFO - 用户 7 断开连接
+2025-06-15 19:56:27,482 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 19:56:27,484 - INFO - Closing down clientserver connection
+2025-06-15 19:56:27,484 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 19:56:27,486 - INFO - Closing down clientserver connection
+2025-06-15 19:57:11,474 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:57:12,467 - INFO - 用户 6 连接到目标 7
+2025-06-15 19:59:13,359 - INFO - 用户 7 断开连接
+2025-06-15 19:59:14,847 - INFO - SELECT DATABASE()
+2025-06-15 19:59:14,847 - INFO - [raw sql] {}
+2025-06-15 19:59:14,850 - INFO - SELECT @@sql_mode
+2025-06-15 19:59:14,850 - INFO - [raw sql] {}
+2025-06-15 19:59:14,852 - INFO - SELECT @@lower_case_table_names
+2025-06-15 19:59:14,852 - INFO - [raw sql] {}
+2025-06-15 19:59:14,856 - INFO - BEGIN (implicit)
+2025-06-15 19:59:14,866 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:59:14,867 - INFO - [generated in 0.00067s] {'id_1': 6}
+2025-06-15 19:59:14,881 - INFO - ROLLBACK
+2025-06-15 19:59:15,044 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:59:26,030 - INFO - 收到消息 from 7 to 6: {'id': 1749988766028, 'text': '事实上', 'time': '2025-06-15T11:59:26.028Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:59:26,040 - INFO - BEGIN (implicit)
+2025-06-15 19:59:26,042 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:59:26,043 - INFO - [generated in 0.00076s] {'id_1': '6'}
+2025-06-15 19:59:28,089 - INFO - 用户 7 断开连接
+2025-06-15 19:59:28,090 - INFO - ROLLBACK
+2025-06-15 19:59:29,445 - INFO - BEGIN (implicit)
+2025-06-15 19:59:29,446 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:59:29,446 - INFO - [cached since 14.58s ago] {'id_1': 6}
+2025-06-15 19:59:29,448 - INFO - ROLLBACK
+2025-06-15 19:59:29,593 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:59:36,659 - INFO - 收到消息 from 7 to 6: {'id': 1749988776658, 'text': '色色色33', 'time': '2025-06-15T11:59:36.658Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:59:36,678 - INFO - BEGIN (implicit)
+2025-06-15 19:59:36,679 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:59:36,679 - INFO - [cached since 10.64s ago] {'id_1': '6'}
+2025-06-15 19:59:41,371 - INFO - 用户 7 断开连接
+2025-06-15 19:59:41,371 - INFO - ROLLBACK
+2025-06-15 19:59:42,978 - INFO - BEGIN (implicit)
+2025-06-15 19:59:42,979 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:59:42,980 - INFO - [cached since 28.11s ago] {'id_1': 6}
+2025-06-15 19:59:42,986 - INFO - ROLLBACK
+2025-06-15 19:59:43,139 - INFO - 用户 7 连接到目标 6
+2025-06-15 19:59:59,258 - INFO - 收到消息 from 7 to 6: {'id': 1749988799258, 'text': '23232', 'time': '2025-06-15T11:59:59.258Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 19:59:59,265 - INFO - BEGIN (implicit)
+2025-06-15 19:59:59,266 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 19:59:59,267 - INFO - [cached since 33.23s ago] {'id_1': '6'}
+2025-06-15 20:00:04,440 - INFO - 用户 6 断开连接
+2025-06-15 20:00:06,254 - INFO - BEGIN (implicit)
+2025-06-15 20:00:06,255 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 20:00:06,256 - INFO - [cached since 51.39s ago] {'id_1': 7}
+2025-06-15 20:00:06,261 - INFO - ROLLBACK
+2025-06-15 20:00:06,308 - INFO - 用户 6 连接到目标 7
+2025-06-15 20:02:31,208 - INFO - 收到消息 from 7 to 6: {'id': 1749988951206, 'text': '沙发沙发', 'time': '2025-06-15T12:02:31.206Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 20:02:31,213 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 20:02:31,213 - INFO - [cached since 185.2s ago] {'id_1': '6'}
+2025-06-15 20:03:02,247 - INFO - 收到消息 from 7 to 6: {'id': 1749988982246, 'text': '事实上', 'time': '2025-06-15T12:03:02.246Z', 'from': 7, 'to': 6, 'fromUsername': '赵敏', 'fromPhoto': '/avatar/ph_12345678921_f039.png'}
+2025-06-15 20:03:02,253 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 20:03:02,255 - INFO - [cached since 216.2s ago] {'id_1': '6'}
+2025-06-15 20:07:34,021 - INFO - 收到消息 from 6 to 7: {'id': 1749989254018, 'text': '萨达萨达是', 'time': '2025-06-15T12:07:34.018Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 20:07:34,031 - INFO - BEGIN (implicit)
+2025-06-15 20:07:34,032 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 20:07:34,032 - INFO - [cached since 488s ago] {'id_1': '7'}
+2025-06-15 20:10:17,850 - INFO - 收到消息 from 6 to 7: {'id': 1749989417848, 'text': '为天热问题', 'time': '2025-06-15T12:10:17.848Z', 'from': 6, 'to': 7, 'fromUsername': '张无忌', 'fromPhoto': '/avatar/ph_12345543212_850a.png'}
+2025-06-15 20:10:17,857 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-06-15 20:10:17,860 - INFO - [cached since 651.8s ago] {'id_1': '7'}
+2025-06-15 20:25:59,010 - INFO - 用户 7 断开连接
+2025-06-15 20:25:59,014 - INFO - 用户 6 断开连接
+2025-06-15 20:25:59,015 - INFO - ROLLBACK
+2025-06-15 20:25:59,018 - INFO - ROLLBACK
+2025-06-15 20:52:43,307 - INFO - 用户 6 连接到目标 7
+2025-06-15 20:52:44,053 - INFO - 用户 7 连接到目标 6
+2025-06-15 20:52:50,113 - INFO - 用户 6 断开连接
+2025-06-15 20:52:52,176 - INFO - 用户 7 断开连接
+2025-06-15 20:52:56,552 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-06-15 20:52:56,553 - INFO - Closing down clientserver connection
+2025-06-15 20:52:56,554 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "D:\conda\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "D:\conda\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-06-15 20:52:56,555 - INFO - Closing down clientserver connection
