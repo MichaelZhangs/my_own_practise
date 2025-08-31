@@ -43,7 +43,7 @@ class Settings:
     # JWT 配置
     SECRET_KEY: str = "abc12#@$%^&1"
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 1
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 1440
     QRCODE_DIR: str = 'qrcode' # 二维码
     AVATAR_DIR: str = 'avatar' #头像
     ARTICLE_MEDIA: str = 'article_media'

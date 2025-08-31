@@ -2,7 +2,7 @@
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect,HTTPException,Query,Depends, UploadFile, File
 from utils.mongodb import MotorDB
 from typing import List, Optional,Union, Any
-from pydantic import BaseModel
+from pydantic import BaseModel,Field
 import uuid
 from config.settings import settings
 from fastapi.responses import JSONResponse
@@ -128,7 +128,7 @@ class Message(BaseModel):
     text: str
     from_id: int
     to: int
-    media:  Union[str, List[Dict[str, Any]]]
+    media:  Optional[Union[str, List[Dict[str, Any]]]] = Field(default_factory=list)
     fromUsername: Optional[str] = None
     fromPhoto: Optional[str] = None
     is_delete: int = 0

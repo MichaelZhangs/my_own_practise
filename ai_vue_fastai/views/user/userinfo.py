@@ -147,10 +147,16 @@ async def search_users(
 
 @router.get("/info", response_model=UserInfo)
 async def get_user_info(
-        id: int,
+        id: str,
         session: Session = Depends(get_session)
 ):
     try:
+        if id.startswith("group_"):
+            raise HTTPException(
+                status_code=400,
+                detail="此接口用于查询用户信息，请使用群组信息接口"
+            )
+        id = int(id)
         print(f"user_id : {id}")
         crud = UserCRUD(session)
         user = crud.get_user_by_user_id(id)

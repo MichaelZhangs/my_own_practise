@@ -15,12 +15,8 @@ from enum import Enum
 from datetime import datetime
 from utils.redis import (store_websocket_connection,
                             remove_websocket_connection,
-                            is_user_online,
-                            mark_message_as_read,
-                            is_message_read,
-get_websocket_connection, get_all_websocket_connections
                              )
-from utils.encryption import generate_key_from_uuid, encrypt
+from utils.get_current_user import get_current_user_id
 from views.chat.single_chat import add_recent_chat
 
 # 初始化MongoDB连接
@@ -81,6 +77,7 @@ async def group_chat_websocket(websocket: WebSocket, user_id: int, group_id: str
                 "from_photo": sender_photo,
                 "group_name": group_name,
                 "is_delete": 0,
+                "message_type": "text",
                 "time": message.get("time", datetime.now().isoformat())
             }
 
@@ -98,14 +95,6 @@ async def group_chat_websocket(websocket: WebSocket, user_id: int, group_id: str
                     # 成员在线，发送消息
                     member_socket = active_connections[member_key]
                     try:
-                        # 加密整个消息对象
-                        uuid_key = str(uuid.uuid4())
-                        publick_key = generate_key_from_uuid(uuid_key)
-                        encrypted_data = encrypt(json.dumps(msg), publick_key)
-                        encrypted_data_msg = {
-                            "encrypt_data": encrypted_data,
-                            "publick_key": uuid_key
-                        }
                         await member_socket.send_text(json.dumps(msg))
                         online_count += 1
                     except Exception as e:
@@ -168,6 +157,8 @@ async def group_chat_websocket(websocket: WebSocket, user_id: int, group_id: str
             del active_connections[connection_key]
         remove_websocket_connection(str(user_id), group_id)
         await websocket.close()
+
+
 # 新增数据模型
 class RecentChat(BaseModel):
     user_id: int
@@ -266,3 +257,10 @@ async def get_chat_history(
     messages.reverse()
 
     return messages
+
+
+
+
+
+
+

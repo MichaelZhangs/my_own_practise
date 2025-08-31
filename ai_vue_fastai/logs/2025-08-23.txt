@@ -17538,3 +17538,796 @@ WHERE users.id = %(id_1)s
 2025-08-23 19:32:02,222 - INFO - 用户 6 连接到目标 9
 2025-08-23 19:32:03,316 - INFO - 用户 6 连接到目标 7
 2025-08-23 19:32:04,996 - INFO - 用户 6 加入群聊 group_afjYz4mD
+2025-08-23 21:54:10,302 - INFO - 发送验证码: phone=12345678921, code=586548
+2025-08-23 21:54:11,617 - INFO - SELECT DATABASE()
+2025-08-23 21:54:11,617 - INFO - [raw sql] {}
+2025-08-23 21:54:11,619 - INFO - SELECT @@sql_mode
+2025-08-23 21:54:11,619 - INFO - [raw sql] {}
+2025-08-23 21:54:11,620 - INFO - SELECT @@lower_case_table_names
+2025-08-23 21:54:11,620 - INFO - [raw sql] {}
+2025-08-23 21:54:11,622 - INFO - BEGIN (implicit)
+2025-08-23 21:54:11,632 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.phone = %(phone_1)s
+2025-08-23 21:54:11,632 - INFO - [generated in 0.00044s] {'phone_1': '12345678921'}
+2025-08-23 21:54:11,636 - INFO - ROLLBACK
+2025-08-23 21:54:23,644 - INFO - BEGIN (implicit)
+2025-08-23 21:54:23,645 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,645 - INFO - [generated in 0.00029s] {'id_1': 13}
+2025-08-23 21:54:23,649 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,649 - INFO - [cached since 0.003902s ago] {'id_1': 13}
+2025-08-23 21:54:23,656 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,657 - INFO - [cached since 0.01169s ago] {'id_1': 7}
+2025-08-23 21:54:23,658 - INFO - moment: {'user_id': 7, 'content': '小猫咪', 'media': [{'type': 'image', 'url': '/article_media/images/media_20250629_e281.png'}], 'like_users': [13], 'stats': {'likes': 1, 'comments': 0, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '赵敏', 'photo': '/avatar/ph_12345678921_f039.png'}, 'created_at': '2025-06-29T17:42:04.894531', 'updated_at': '2025-07-05T20:39:18.568391', 'id': '68610a6cfd4671c36fedcc55'}
+2025-08-23 21:54:23,659 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,659 - INFO - [cached since 0.01401s ago] {'id_1': 7}
+2025-08-23 21:54:23,661 - INFO - moment: {'user_id': 7, 'content': '分享视频', 'media': [{'type': 'video', 'url': '/article_media/videos/media_20250629_5d54.mp4'}], 'like_users': [7], 'stats': {'likes': 1, 'comments': 3, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '赵敏', 'photo': '/avatar/ph_12345678921_f039.png'}, 'created_at': '2025-06-29T17:22:32.704322', 'updated_at': '2025-06-29T17:34:27.734091', 'id': '686105d8ae169e071970d224'}
+2025-08-23 21:54:23,661 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,662 - INFO - [cached since 0.01658s ago] {'id_1': 6}
+2025-08-23 21:54:23,664 - INFO - moment: {'user_id': 6, 'content': '哈哈哈，再试试', 'media': [], 'like_users': [6, 7, 13], 'stats': {'likes': 3, 'comments': 3, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '张无忌', 'photo': '/avatar/ph_12345543212_850a.png'}, 'created_at': '2025-06-29T17:06:53.223606', 'updated_at': '2025-07-05T20:39:21.173550', 'id': '6861022de709bc11c3cda2e6'}
+2025-08-23 21:54:23,665 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,665 - INFO - [cached since 0.02039s ago] {'id_1': 7}
+2025-08-23 21:54:23,668 - INFO - moment: {'user_id': 7, 'content': '发一条', 'media': [], 'like_users': [6, 13], 'stats': {'likes': 2, 'comments': 1, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '赵敏', 'photo': '/avatar/ph_12345678921_f039.png'}, 'created_at': '2025-06-29T17:04:31.753066', 'updated_at': '2025-07-05T20:39:24.119740', 'id': '6861019fe709bc11c3cda2e5'}
+2025-08-23 21:54:23,674 - INFO - ROLLBACK
+2025-08-23 21:54:23,679 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:54:23,682 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:54:23,686 - INFO - BEGIN (implicit)
+2025-08-23 21:54:23,687 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,688 - INFO - [cached since 0.04345s ago] {'id_1': 1}
+2025-08-23 21:54:23,690 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:54:23,691 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:54:23,692 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:54:23,693 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:54:23,693 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:54:23,695 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:54:23,696 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:54:23,697 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:54:23,698 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:54:23,699 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:54:23,699 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:54:23,700 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:54:23,700 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:54:23,704 - INFO - BEGIN (implicit)
+2025-08-23 21:54:23,705 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,705 - INFO - [cached since 0.06055s ago] {'id_1': 1}
+2025-08-23 21:54:23,708 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:54:23,709 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:54:23,709 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:54:23,710 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:54:23,710 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:54:23,711 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:54:23,711 - INFO - select_members: [7, 1, 3, 2]
+2025-08-23 21:54:23,711 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:54:23,717 - INFO - BEGIN (implicit)
+2025-08-23 21:54:23,718 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,718 - INFO - [cached since 0.07328s ago] {'id_1': 1}
+2025-08-23 21:54:23,720 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:54:23,721 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:54:23,721 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:54:23,721 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_18654537123_6ae9.png']
+2025-08-23 21:54:23,722 - INFO - ROLLBACK
+2025-08-23 21:54:23,724 - INFO - ROLLBACK
+2025-08-23 21:54:23,725 - INFO - ROLLBACK
+2025-08-23 21:54:23,746 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:54:23,752 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:54:23,753 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:54:23,798 - INFO - group_members: [{'_id': ObjectId('687c9d8635efe850a2c71420'), 'group_id': 'group_huPpqMWJ', 'name': '群聊 (5人)', 'creator_id': 7, 'members': [1, 2, 3, 4, 7], 'members_count': 5, 'created_at': datetime.datetime(2025, 7, 20, 7, 40, 54, 363000), 'photo': None, 'description': None}, {'_id': ObjectId('688e18e0124509220835c24b'), 'group_id': 'group_67QZ6qGB', 'name': '群聊 (4人)', 'creator_id': 7, 'members': [1, 3, 2, 7], 'members_count': 4, 'created_at': datetime.datetime(2025, 8, 2, 13, 55, 44, 528000), 'photo': None, 'description': None}, {'_id': ObjectId('688e1bb1124509220835c277'), 'group_id': 'group_LoVNSEGt', 'name': '群聊 (5人)', 'creator_id': 6, 'members': [1, 2, 8, 7, 6], 'members_count': 5, 'created_at': datetime.datetime(2025, 8, 2, 14, 7, 45, 270000), 'photo': None, 'description': None}, {'_id': ObjectId('68a9591fdabded921c5337fa'), 'group_id': 'group_afjYz4mD', 'name': '赵张宋', 'creator_id': 7, 'members': [6, 9, 4, 7], 'members_count': 4, 'created_at': datetime.datetime(2025, 8, 23, 6, 1, 3, 831000), 'photo': None, 'description': None}]
+2025-08-23 21:54:23,832 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:54:23,834 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:54:23,835 - INFO - BEGIN (implicit)
+2025-08-23 21:54:23,836 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,836 - INFO - [cached since 0.1909s ago] {'id_1': 1}
+2025-08-23 21:54:23,837 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:54:23,837 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:54:23,838 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:54:23,838 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:54:23,838 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:54:23,839 - INFO - select_members: [7, 1, 3, 2]
+2025-08-23 21:54:23,839 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:54:23,840 - INFO - BEGIN (implicit)
+2025-08-23 21:54:23,840 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,840 - INFO - [cached since 0.1955s ago] {'id_1': 1}
+2025-08-23 21:54:23,842 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:54:23,843 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:54:23,843 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:54:23,843 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_18654537123_6ae9.png']
+2025-08-23 21:54:23,843 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:54:23,843 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:54:23,844 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:54:23,844 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:54:23,844 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:54:23,844 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:54:23,844 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:54:23,844 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:54:23,845 - INFO - BEGIN (implicit)
+2025-08-23 21:54:23,846 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:54:23,846 - INFO - [cached since 0.2007s ago] {'id_1': 1}
+2025-08-23 21:54:23,847 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:54:23,847 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:54:23,847 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:54:23,847 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:54:23,848 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:54:23,848 - INFO - ROLLBACK
+2025-08-23 21:54:23,849 - INFO - ROLLBACK
+2025-08-23 21:54:23,849 - INFO - ROLLBACK
+2025-08-23 21:55:40,951 - INFO - BEGIN (implicit)
+2025-08-23 21:55:40,953 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:40,953 - INFO - [cached since 77.31s ago] {'id_1': 7}
+2025-08-23 21:55:40,958 - INFO - ROLLBACK
+2025-08-23 21:55:40,976 - INFO - BEGIN (implicit)
+2025-08-23 21:55:40,977 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:40,977 - INFO - [cached since 77.33s ago] {'id_1': 7}
+2025-08-23 21:55:40,981 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:40,981 - INFO - [cached since 77.34s ago] {'id_1': 13}
+2025-08-23 21:55:40,999 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:40,999 - INFO - [cached since 77.35s ago] {'id_1': 13}
+2025-08-23 21:55:41,006 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,006 - INFO - [cached since 77.36s ago] {'id_1': 7}
+2025-08-23 21:55:41,011 - INFO - moment: {'user_id': 7, 'content': '小猫咪', 'media': [{'type': 'image', 'url': '/article_media/images/media_20250629_e281.png'}], 'like_users': [13], 'stats': {'likes': 1, 'comments': 0, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '赵敏', 'photo': '/avatar/ph_12345678921_f039.png'}, 'created_at': '2025-06-29T17:42:04.894531', 'updated_at': '2025-07-05T20:39:18.568391', 'id': '68610a6cfd4671c36fedcc55'}
+2025-08-23 21:55:41,012 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,012 - INFO - [cached since 77.37s ago] {'id_1': 7}
+2025-08-23 21:55:41,015 - INFO - moment: {'user_id': 7, 'content': '分享视频', 'media': [{'type': 'video', 'url': '/article_media/videos/media_20250629_5d54.mp4'}], 'like_users': [7], 'stats': {'likes': 1, 'comments': 3, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '赵敏', 'photo': '/avatar/ph_12345678921_f039.png'}, 'created_at': '2025-06-29T17:22:32.704322', 'updated_at': '2025-06-29T17:34:27.734091', 'id': '686105d8ae169e071970d224'}
+2025-08-23 21:55:41,015 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,016 - INFO - [cached since 77.37s ago] {'id_1': 6}
+2025-08-23 21:55:41,018 - INFO - moment: {'user_id': 6, 'content': '哈哈哈，再试试', 'media': [], 'like_users': [6, 7, 13], 'stats': {'likes': 3, 'comments': 3, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '张无忌', 'photo': '/avatar/ph_12345543212_850a.png'}, 'created_at': '2025-06-29T17:06:53.223606', 'updated_at': '2025-07-05T20:39:21.173550', 'id': '6861022de709bc11c3cda2e6'}
+2025-08-23 21:55:41,019 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,019 - INFO - [cached since 77.37s ago] {'id_1': 7}
+2025-08-23 21:55:41,025 - INFO - moment: {'user_id': 7, 'content': '发一条', 'media': [], 'like_users': [6, 13], 'stats': {'likes': 2, 'comments': 1, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '赵敏', 'photo': '/avatar/ph_12345678921_f039.png'}, 'created_at': '2025-06-29T17:04:31.753066', 'updated_at': '2025-07-05T20:39:24.119740', 'id': '6861019fe709bc11c3cda2e5'}
+2025-08-23 21:55:41,027 - INFO - ROLLBACK
+2025-08-23 21:55:41,602 - INFO - BEGIN (implicit)
+2025-08-23 21:55:41,603 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,603 - INFO - [cached since 77.96s ago] {'id_1': 7}
+2025-08-23 21:55:41,609 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,609 - INFO - [cached since 77.96s ago] {'id_1': 13}
+2025-08-23 21:55:41,632 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,632 - INFO - [cached since 77.99s ago] {'id_1': 13}
+2025-08-23 21:55:41,638 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,641 - INFO - [cached since 78s ago] {'id_1': 7}
+2025-08-23 21:55:41,642 - INFO - moment: {'user_id': 7, 'content': '小猫咪', 'media': [{'type': 'image', 'url': '/article_media/images/media_20250629_e281.png'}], 'like_users': [13], 'stats': {'likes': 1, 'comments': 0, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '赵敏', 'photo': '/avatar/ph_12345678921_f039.png'}, 'created_at': '2025-06-29T17:42:04.894531', 'updated_at': '2025-07-05T20:39:18.568391', 'id': '68610a6cfd4671c36fedcc55'}
+2025-08-23 21:55:41,643 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,643 - INFO - [cached since 78s ago] {'id_1': 7}
+2025-08-23 21:55:41,645 - INFO - moment: {'user_id': 7, 'content': '分享视频', 'media': [{'type': 'video', 'url': '/article_media/videos/media_20250629_5d54.mp4'}], 'like_users': [7], 'stats': {'likes': 1, 'comments': 3, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '赵敏', 'photo': '/avatar/ph_12345678921_f039.png'}, 'created_at': '2025-06-29T17:22:32.704322', 'updated_at': '2025-06-29T17:34:27.734091', 'id': '686105d8ae169e071970d224'}
+2025-08-23 21:55:41,646 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,646 - INFO - [cached since 78s ago] {'id_1': 6}
+2025-08-23 21:55:41,647 - INFO - moment: {'user_id': 6, 'content': '哈哈哈，再试试', 'media': [], 'like_users': [6, 7, 13], 'stats': {'likes': 3, 'comments': 3, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '张无忌', 'photo': '/avatar/ph_12345543212_850a.png'}, 'created_at': '2025-06-29T17:06:53.223606', 'updated_at': '2025-07-05T20:39:21.173550', 'id': '6861022de709bc11c3cda2e6'}
+2025-08-23 21:55:41,648 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:41,648 - INFO - [cached since 78s ago] {'id_1': 7}
+2025-08-23 21:55:41,649 - INFO - moment: {'user_id': 7, 'content': '发一条', 'media': [], 'like_users': [6, 13], 'stats': {'likes': 2, 'comments': 1, 'shares': 0}, 'visibility': 'public', 'is_delete': 0, 'user': {'username': '赵敏', 'photo': '/avatar/ph_12345678921_f039.png'}, 'created_at': '2025-06-29T17:04:31.753066', 'updated_at': '2025-07-05T20:39:24.119740', 'id': '6861019fe709bc11c3cda2e5'}
+2025-08-23 21:55:41,650 - INFO - ROLLBACK
+2025-08-23 21:55:45,755 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:55:45,760 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:45,761 - INFO - BEGIN (implicit)
+2025-08-23 21:55:45,762 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:45,762 - INFO - [cached since 82.12s ago] {'id_1': 1}
+2025-08-23 21:55:45,765 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:45,766 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:45,767 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:55:45,767 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:45,768 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:45,769 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:55:45,772 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:45,773 - INFO - BEGIN (implicit)
+2025-08-23 21:55:45,774 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:45,774 - INFO - [cached since 82.13s ago] {'id_1': 1}
+2025-08-23 21:55:45,776 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:45,777 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:45,777 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:45,778 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:45,778 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:45,779 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:55:45,781 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:45,781 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:45,782 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:55:45,782 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:45,783 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:45,784 - INFO - select_members: [7, 1, 3, 2]
+2025-08-23 21:55:45,785 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:45,786 - INFO - ROLLBACK
+2025-08-23 21:55:45,788 - INFO - BEGIN (implicit)
+2025-08-23 21:55:45,789 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:45,789 - INFO - [cached since 82.14s ago] {'id_1': 1}
+2025-08-23 21:55:45,790 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:45,791 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:45,792 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:45,792 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_18654537123_6ae9.png']
+2025-08-23 21:55:45,793 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:45,793 - INFO - ROLLBACK
+2025-08-23 21:55:45,794 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:45,797 - INFO - ROLLBACK
+2025-08-23 21:55:45,819 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:45,820 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:45,860 - INFO - group_members: [{'_id': ObjectId('687c9d8635efe850a2c71420'), 'group_id': 'group_huPpqMWJ', 'name': '群聊 (5人)', 'creator_id': 7, 'members': [1, 2, 3, 4, 7], 'members_count': 5, 'created_at': datetime.datetime(2025, 7, 20, 7, 40, 54, 363000), 'photo': None, 'description': None}, {'_id': ObjectId('688e18e0124509220835c24b'), 'group_id': 'group_67QZ6qGB', 'name': '群聊 (4人)', 'creator_id': 7, 'members': [1, 3, 2, 7], 'members_count': 4, 'created_at': datetime.datetime(2025, 8, 2, 13, 55, 44, 528000), 'photo': None, 'description': None}, {'_id': ObjectId('688e1bb1124509220835c277'), 'group_id': 'group_LoVNSEGt', 'name': '群聊 (5人)', 'creator_id': 6, 'members': [1, 2, 8, 7, 6], 'members_count': 5, 'created_at': datetime.datetime(2025, 8, 2, 14, 7, 45, 270000), 'photo': None, 'description': None}, {'_id': ObjectId('68a9591fdabded921c5337fa'), 'group_id': 'group_afjYz4mD', 'name': '赵张宋', 'creator_id': 7, 'members': [6, 9, 4, 7], 'members_count': 4, 'created_at': datetime.datetime(2025, 8, 23, 6, 1, 3, 831000), 'photo': None, 'description': None}]
+2025-08-23 21:55:45,906 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:55:45,907 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:45,908 - INFO - BEGIN (implicit)
+2025-08-23 21:55:45,909 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:45,909 - INFO - [cached since 82.26s ago] {'id_1': 1}
+2025-08-23 21:55:45,911 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:45,911 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:45,912 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:45,912 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:45,912 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:45,913 - INFO - select_members: [7, 1, 3, 2]
+2025-08-23 21:55:45,913 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:45,915 - INFO - BEGIN (implicit)
+2025-08-23 21:55:45,915 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:45,916 - INFO - [cached since 82.27s ago] {'id_1': 1}
+2025-08-23 21:55:45,917 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:45,918 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:45,918 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:45,919 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_18654537123_6ae9.png']
+2025-08-23 21:55:45,919 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:55:45,920 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:45,920 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:45,921 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:55:45,921 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:45,922 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:45,933 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:55:45,934 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:45,935 - INFO - BEGIN (implicit)
+2025-08-23 21:55:45,936 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:45,936 - INFO - [cached since 82.29s ago] {'id_1': 1}
+2025-08-23 21:55:45,938 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:45,938 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:45,939 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:55:45,940 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:45,940 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:45,940 - INFO - ROLLBACK
+2025-08-23 21:55:45,944 - INFO - ROLLBACK
+2025-08-23 21:55:45,949 - INFO - ROLLBACK
+2025-08-23 21:55:47,243 - INFO - BEGIN (implicit)
+2025-08-23 21:55:47,244 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:47,244 - INFO - [cached since 83.6s ago] {'id_1': 7}
+2025-08-23 21:55:47,250 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:47,251 - INFO - [cached since 83.61s ago] {'id_1': 7}
+2025-08-23 21:55:47,253 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:47,253 - INFO - [cached since 83.61s ago] {'id_1': 7}
+2025-08-23 21:55:47,256 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:47,257 - INFO - [cached since 83.61s ago] {'id_1': 7}
+2025-08-23 21:55:47,259 - INFO - ROLLBACK
+2025-08-23 21:55:50,744 - INFO - BEGIN (implicit)
+2025-08-23 21:55:50,744 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:50,744 - INFO - [cached since 87.1s ago] {'id_1': 7}
+2025-08-23 21:55:50,746 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:50,746 - INFO - [cached since 87.1s ago] {'id_1': 6}
+2025-08-23 21:55:50,748 - INFO - ROLLBACK
+2025-08-23 21:55:53,410 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,411 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,411 - INFO - [cached since 89.77s ago] {'id_1': 7}
+2025-08-23 21:55:53,417 - INFO - ROLLBACK
+2025-08-23 21:55:53,457 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:55:53,458 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:53,459 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,460 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,460 - INFO - [cached since 89.82s ago] {'id_1': 1}
+2025-08-23 21:55:53,461 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,462 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,462 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:55:53,463 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,463 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:53,465 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:55:53,466 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,467 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,467 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,467 - INFO - [cached since 89.82s ago] {'id_1': 1}
+2025-08-23 21:55:53,468 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,469 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,469 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:53,469 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:53,470 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:53,471 - INFO - ROLLBACK
+2025-08-23 21:55:53,473 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:53,474 - INFO - ROLLBACK
+2025-08-23 21:55:53,474 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:53,475 - INFO - select_members: [7, 1, 3, 2]
+2025-08-23 21:55:53,477 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,478 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,478 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,479 - INFO - [cached since 89.83s ago] {'id_1': 1}
+2025-08-23 21:55:53,480 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,480 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:53,481 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,481 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_18654537123_6ae9.png']
+2025-08-23 21:55:53,482 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:55:53,483 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,483 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:53,483 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:55:53,484 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:53,484 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:53,485 - INFO - ROLLBACK
+2025-08-23 21:55:53,501 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:53,502 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:53,562 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:55:53,563 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,564 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:53,565 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:55:53,565 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:53,566 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:53,566 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:55:53,566 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:53,567 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,568 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,568 - INFO - [cached since 89.92s ago] {'id_1': 1}
+2025-08-23 21:55:53,570 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,571 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,572 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:55:53,572 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,572 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:53,572 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:55:53,573 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,573 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,574 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,574 - INFO - [cached since 89.93s ago] {'id_1': 1}
+2025-08-23 21:55:53,575 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,575 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,577 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:53,577 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:53,577 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:53,578 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:53,578 - INFO - select_members: [7, 1, 3, 2]
+2025-08-23 21:55:53,578 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,579 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,580 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,580 - INFO - [cached since 89.93s ago] {'id_1': 1}
+2025-08-23 21:55:53,581 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,581 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:53,582 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,582 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_18654537123_6ae9.png']
+2025-08-23 21:55:53,582 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:53,587 - INFO - ROLLBACK
+2025-08-23 21:55:53,589 - INFO - ROLLBACK
+2025-08-23 21:55:53,589 - INFO - ROLLBACK
+2025-08-23 21:55:53,607 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:53,609 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:55:53,610 - INFO - group_members: [{'_id': ObjectId('687c9d8635efe850a2c71420'), 'group_id': 'group_huPpqMWJ', 'name': '群聊 (5人)', 'creator_id': 7, 'members': [1, 2, 3, 4, 7], 'members_count': 5, 'created_at': datetime.datetime(2025, 7, 20, 7, 40, 54, 363000), 'photo': None, 'description': None}, {'_id': ObjectId('688e18e0124509220835c24b'), 'group_id': 'group_67QZ6qGB', 'name': '群聊 (4人)', 'creator_id': 7, 'members': [1, 3, 2, 7], 'members_count': 4, 'created_at': datetime.datetime(2025, 8, 2, 13, 55, 44, 528000), 'photo': None, 'description': None}, {'_id': ObjectId('688e1bb1124509220835c277'), 'group_id': 'group_LoVNSEGt', 'name': '群聊 (5人)', 'creator_id': 6, 'members': [1, 2, 8, 7, 6], 'members_count': 5, 'created_at': datetime.datetime(2025, 8, 2, 14, 7, 45, 270000), 'photo': None, 'description': None}, {'_id': ObjectId('68a9591fdabded921c5337fa'), 'group_id': 'group_afjYz4mD', 'name': '赵张宋', 'creator_id': 7, 'members': [6, 9, 4, 7], 'members_count': 4, 'created_at': datetime.datetime(2025, 8, 23, 6, 1, 3, 831000), 'photo': None, 'description': None}]
+2025-08-23 21:55:53,631 - INFO - group_members: [{'_id': ObjectId('687c9d8635efe850a2c71420'), 'group_id': 'group_huPpqMWJ', 'name': '群聊 (5人)', 'creator_id': 7, 'members': [1, 2, 3, 4, 7], 'members_count': 5, 'created_at': datetime.datetime(2025, 7, 20, 7, 40, 54, 363000), 'photo': None, 'description': None}, {'_id': ObjectId('688e18e0124509220835c24b'), 'group_id': 'group_67QZ6qGB', 'name': '群聊 (4人)', 'creator_id': 7, 'members': [1, 3, 2, 7], 'members_count': 4, 'created_at': datetime.datetime(2025, 8, 2, 13, 55, 44, 528000), 'photo': None, 'description': None}, {'_id': ObjectId('688e1bb1124509220835c277'), 'group_id': 'group_LoVNSEGt', 'name': '群聊 (5人)', 'creator_id': 6, 'members': [1, 2, 8, 7, 6], 'members_count': 5, 'created_at': datetime.datetime(2025, 8, 2, 14, 7, 45, 270000), 'photo': None, 'description': None}, {'_id': ObjectId('68a9591fdabded921c5337fa'), 'group_id': 'group_afjYz4mD', 'name': '赵张宋', 'creator_id': 7, 'members': [6, 9, 4, 7], 'members_count': 4, 'created_at': datetime.datetime(2025, 8, 23, 6, 1, 3, 831000), 'photo': None, 'description': None}]
+2025-08-23 21:55:53,634 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:55:53,637 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,638 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,638 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,638 - INFO - [cached since 89.99s ago] {'id_1': 1}
+2025-08-23 21:55:53,640 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,640 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,640 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:53,641 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:53,641 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:53,642 - INFO - select_members: [7, 1, 3, 2]
+2025-08-23 21:55:53,642 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,644 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,646 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,646 - INFO - [cached since 90s ago] {'id_1': 1}
+2025-08-23 21:55:53,647 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,647 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:53,648 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,648 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_18654537123_6ae9.png']
+2025-08-23 21:55:53,648 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:55:53,649 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,649 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:53,649 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:55:53,650 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:53,650 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:53,650 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:55:53,650 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:53,651 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,651 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,652 - INFO - [cached since 90.01s ago] {'id_1': 1}
+2025-08-23 21:55:53,653 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,653 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,654 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:55:53,654 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,654 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:53,654 - INFO - ROLLBACK
+2025-08-23 21:55:53,655 - INFO - ROLLBACK
+2025-08-23 21:55:53,655 - INFO - ROLLBACK
+2025-08-23 21:55:53,671 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:55:53,673 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,674 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,674 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,674 - INFO - [cached since 90.03s ago] {'id_1': 1}
+2025-08-23 21:55:53,675 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,675 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,675 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:53,675 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:53,675 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:53,675 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:55:53,677 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,677 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:53,677 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:55:53,677 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:53,678 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:53,678 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:55:53,678 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:53,679 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,680 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,680 - INFO - [cached since 90.04s ago] {'id_1': 1}
+2025-08-23 21:55:53,681 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,681 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,682 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:55:53,682 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,682 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:53,682 - INFO - select_members: [7, 1, 3, 2]
+2025-08-23 21:55:53,682 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:53,683 - INFO - BEGIN (implicit)
+2025-08-23 21:55:53,683 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:53,683 - INFO - [cached since 90.04s ago] {'id_1': 1}
+2025-08-23 21:55:53,685 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:53,686 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:53,686 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:53,686 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_18654537123_6ae9.png']
+2025-08-23 21:55:53,687 - INFO - ROLLBACK
+2025-08-23 21:55:53,687 - INFO - ROLLBACK
+2025-08-23 21:55:53,687 - INFO - ROLLBACK
+2025-08-23 21:55:55,098 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:55:55,098 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:55,100 - INFO - BEGIN (implicit)
+2025-08-23 21:55:55,101 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:55,102 - INFO - [cached since 91.46s ago] {'id_1': 1}
+2025-08-23 21:55:55,103 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:55,104 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:55,105 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:55:55,107 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:55,107 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:55,107 - INFO - ROLLBACK
+2025-08-23 21:55:55,145 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:55:55,147 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:55,152 - INFO - BEGIN (implicit)
+2025-08-23 21:55:55,152 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:55,153 - INFO - [cached since 91.51s ago] {'id_1': 1}
+2025-08-23 21:55:55,155 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:55,171 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:55,172 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:55:55,172 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:55,173 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:55,173 - INFO - 打印 群成员 图片: ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:55,175 - INFO - ROLLBACK
+2025-08-23 21:55:55,184 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:55:55,184 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:55:55,188 - INFO - BEGIN (implicit)
+2025-08-23 21:55:55,189 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:55,189 - INFO - [cached since 91.54s ago] {'id_1': 1}
+2025-08-23 21:55:55,191 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:55,192 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:55,192 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:55:55,193 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:55,193 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:55:55,194 - INFO - ROLLBACK
+2025-08-23 21:55:55,207 - INFO - 用户 7 加入群聊 group_LoVNSEGt
+2025-08-23 21:55:57,322 - INFO - 用户 7 离开群聊 group_LoVNSEGt
+2025-08-23 21:55:57,336 - INFO - BEGIN (implicit)
+2025-08-23 21:55:57,338 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:57,338 - INFO - [cached since 93.69s ago] {'id_1': 6}
+2025-08-23 21:55:57,340 - INFO - ROLLBACK
+2025-08-23 21:55:57,354 - INFO - 用户 7 连接到目标 6
+2025-08-23 21:55:58,965 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:55:58,967 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:58,969 - INFO - BEGIN (implicit)
+2025-08-23 21:55:58,970 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:58,970 - INFO - [cached since 95.32s ago] {'id_1': 1}
+2025-08-23 21:55:58,972 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:58,974 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:58,975 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:58,976 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:58,976 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:58,977 - INFO - ROLLBACK
+2025-08-23 21:55:59,009 - INFO - 用户 7 断开连接
+2025-08-23 21:55:59,050 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:55:59,052 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:59,054 - INFO - BEGIN (implicit)
+2025-08-23 21:55:59,054 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:59,055 - INFO - [cached since 95.41s ago] {'id_1': 1}
+2025-08-23 21:55:59,056 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:59,057 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:59,057 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:59,058 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:59,058 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:59,058 - INFO - 打印 群成员 图片: ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:59,059 - INFO - ROLLBACK
+2025-08-23 21:55:59,067 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:55:59,068 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:55:59,070 - INFO - BEGIN (implicit)
+2025-08-23 21:55:59,070 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:55:59,070 - INFO - [cached since 95.43s ago] {'id_1': 1}
+2025-08-23 21:55:59,072 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:55:59,073 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:55:59,073 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:55:59,074 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:55:59,074 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:55:59,074 - INFO - ROLLBACK
+2025-08-23 21:55:59,083 - INFO - 用户 7 加入群聊 group_huPpqMWJ
+2025-08-23 21:56:00,332 - INFO - 用户 7 加入群聊 group_LoVNSEGt
+2025-08-23 21:56:01,121 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:56:01,122 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:56:01,125 - INFO - BEGIN (implicit)
+2025-08-23 21:56:01,126 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:01,126 - INFO - [cached since 97.48s ago] {'id_1': 1}
+2025-08-23 21:56:01,128 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:56:01,129 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:56:01,131 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:56:01,132 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:01,132 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:56:01,133 - INFO - ROLLBACK
+2025-08-23 21:56:01,161 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:56:01,162 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:56:01,163 - INFO - BEGIN (implicit)
+2025-08-23 21:56:01,164 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:01,164 - INFO - [cached since 97.52s ago] {'id_1': 1}
+2025-08-23 21:56:01,165 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:56:01,166 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:56:01,167 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:56:01,167 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:01,167 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:56:01,168 - INFO - 打印 群成员 图片: ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:56:01,168 - INFO - ROLLBACK
+2025-08-23 21:56:01,177 - INFO - select_members: [6, 1, 2, 8, 7]
+2025-08-23 21:56:01,178 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:56:01,180 - INFO - BEGIN (implicit)
+2025-08-23 21:56:01,181 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:01,181 - INFO - [cached since 97.54s ago] {'id_1': 1}
+2025-08-23 21:56:01,184 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:56:01,185 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:56:01,186 - INFO - user_dic from cache: {'username': '周芷若', 'phone': '12345098723', 'id': 8, 'photo': '/avatar/ph_12345098723_1f05.png', 'email': ''}
+2025-08-23 21:56:01,187 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:01,187 - INFO - avatar : ['/avatar/ph_12345543212_850a.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_12345098723_1f05.png', '/avatar/ph_12345678921_f039.png']
+2025-08-23 21:56:01,188 - INFO - ROLLBACK
+2025-08-23 21:56:01,198 - INFO - 用户 7 离开群聊 group_huPpqMWJ
+2025-08-23 21:56:01,200 - INFO - 用户 7 加入群聊 group_LoVNSEGt
+2025-08-23 21:56:02,020 - INFO - 用户 7 连接到目标 6
+2025-08-23 21:56:02,261 - INFO - 用户 7 离开群聊 group_LoVNSEGt
+2025-08-23 21:56:02,271 - INFO - BEGIN (implicit)
+2025-08-23 21:56:02,272 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:02,272 - INFO - [cached since 98.63s ago] {'id_1': 6}
+2025-08-23 21:56:02,274 - INFO - ROLLBACK
+2025-08-23 21:56:02,289 - INFO - 用户 7 连接到目标 6
+2025-08-23 21:56:02,986 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:56:02,987 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:02,989 - INFO - BEGIN (implicit)
+2025-08-23 21:56:02,990 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:02,990 - INFO - [cached since 99.35s ago] {'id_1': 1}
+2025-08-23 21:56:02,995 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:56:02,997 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:56:02,997 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:56:02,998 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:56:02,998 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:02,999 - INFO - ROLLBACK
+2025-08-23 21:56:03,029 - INFO - 用户 7 断开连接
+2025-08-23 21:56:03,034 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:56:03,035 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:03,037 - INFO - BEGIN (implicit)
+2025-08-23 21:56:03,037 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:03,037 - INFO - [cached since 99.39s ago] {'id_1': 1}
+2025-08-23 21:56:03,039 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:56:03,039 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:56:03,040 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:56:03,040 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:56:03,041 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:03,041 - INFO - 打印 群成员 图片: ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:03,041 - INFO - ROLLBACK
+2025-08-23 21:56:03,049 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:56:03,050 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:03,054 - INFO - BEGIN (implicit)
+2025-08-23 21:56:03,056 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:03,056 - INFO - [cached since 99.41s ago] {'id_1': 1}
+2025-08-23 21:56:03,059 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:56:03,060 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:56:03,061 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:56:03,061 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:56:03,061 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:03,062 - INFO - ROLLBACK
+2025-08-23 21:56:03,072 - INFO - 用户 7 加入群聊 group_huPpqMWJ
+2025-08-23 21:56:03,567 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:56:03,569 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:03,570 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:56:03,571 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:56:03,572 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:56:03,572 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:03,602 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:56:03,603 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:03,603 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:56:03,603 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:56:03,604 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:56:03,604 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:03,604 - INFO - 打印 群成员 图片: ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:03,612 - INFO - select_members: [7, 6, 9, 4]
+2025-08-23 21:56:03,613 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:03,614 - INFO - user_dic from cache: {'username': '张无忌', 'phone': '12345543212', 'id': 6, 'photo': '/avatar/ph_12345543212_850a.png', 'email': ''}
+2025-08-23 21:56:03,616 - INFO - user_dic from cache: {'username': '宋青书', 'phone': '12345678876', 'id': 9, 'photo': '/avatar/ph_12345678876_2464.png', 'email': ''}
+2025-08-23 21:56:03,617 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:56:03,617 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_12345543212_850a.png', '/avatar/ph_12345678876_2464.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:03,623 - INFO - 用户 7 离开群聊 group_huPpqMWJ
+2025-08-23 21:56:03,629 - INFO - 用户 7 加入群聊 group_afjYz4mD
+2025-08-23 21:56:04,337 - INFO - 用户 7 离开群聊 group_afjYz4mD
+2025-08-23 21:56:04,339 - INFO - BEGIN (implicit)
+2025-08-23 21:56:04,340 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:04,341 - INFO - [cached since 100.7s ago] {'id_1': 6}
+2025-08-23 21:56:04,343 - INFO - ROLLBACK
+2025-08-23 21:56:04,364 - INFO - 用户 7 连接到目标 6
+2025-08-23 21:56:05,277 - INFO - 用户 7 加入群聊 group_LoVNSEGt
+2025-08-23 21:56:06,038 - INFO - 用户 7 连接到目标 6
+2025-08-23 21:56:07,348 - INFO - 用户 7 加入群聊 group_afjYz4mD
+2025-08-23 21:56:20,434 - INFO - 获取群头像失败: 404: 群组不存在
+2025-08-23 21:56:20,443 - ERROR - 获取群信息失败: 404: 群组不存在
+2025-08-23 21:56:20,474 - INFO - 用户 7 断开连接
+2025-08-23 21:56:20,480 - ERROR - 获取群信息失败: 404: 群组不存在
+2025-08-23 21:56:23,484 - INFO - 用户 7 连接到目标 6
+2025-08-23 21:56:27,505 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:56:27,506 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:27,507 - INFO - BEGIN (implicit)
+2025-08-23 21:56:27,508 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:27,508 - INFO - [cached since 123.9s ago] {'id_1': 1}
+2025-08-23 21:56:27,510 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:56:27,510 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:56:27,511 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:56:27,511 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:56:27,511 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:27,511 - INFO - ROLLBACK
+2025-08-23 21:56:27,534 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:56:27,535 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:27,536 - INFO - BEGIN (implicit)
+2025-08-23 21:56:27,536 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:27,536 - INFO - [cached since 123.9s ago] {'id_1': 1}
+2025-08-23 21:56:27,538 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:56:27,539 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:56:27,539 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:56:27,540 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:56:27,540 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:27,540 - INFO - 打印 群成员 图片: ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:27,541 - INFO - ROLLBACK
+2025-08-23 21:56:27,549 - INFO - select_members: [7, 1, 2, 3, 4]
+2025-08-23 21:56:27,550 - INFO - user_dic from cache: {'username': '赵敏', 'phone': '12345678921', 'id': 7, 'photo': '/avatar/ph_12345678921_f039.png', 'email': ''}
+2025-08-23 21:56:27,551 - INFO - BEGIN (implicit)
+2025-08-23 21:56:27,552 - INFO - SELECT users.phone, users.email, users.username, users.sex, users.description, users.photo, users.qrcode, users.password, users.id, users.created_at 
+FROM users 
+WHERE users.id = %(id_1)s
+2025-08-23 21:56:27,552 - INFO - [cached since 123.9s ago] {'id_1': 1}
+2025-08-23 21:56:27,554 - INFO - user from DB: description='我是猫星人' email=None qrcode='/qrcode/qrcode_18654537087.png' id=1 sex=<SexEnum.female: 'female'> phone='18654537087' username='猫星人' photo='/avatar/ph_18654537087_8364.png' password='' created_at=datetime.datetime(2025, 3, 9, 14, 35, 6)
+2025-08-23 21:56:27,554 - INFO - user_dic from cache: {'username': '米老鼠', 'phone': '18654537123', 'id': 2, 'photo': '/avatar/ph_18654537123_6ae9.png', 'email': ''}
+2025-08-23 21:56:27,555 - INFO - user_dic from cache: {'username': '白小雪', 'phone': '123454322345', 'id': 3, 'photo': '/avatar/ph_123454322345_58e9.png', 'email': ''}
+2025-08-23 21:56:27,556 - INFO - user_dic from cache: {'username': '张三丰', 'phone': '123456784321', 'id': 4, 'photo': '/avatar/ph_123456784321_7a24.png', 'email': ''}
+2025-08-23 21:56:27,556 - INFO - avatar : ['/avatar/ph_12345678921_f039.png', '/avatar/ph_18654537087_8364.png', '/avatar/ph_18654537123_6ae9.png', '/avatar/ph_123454322345_58e9.png', '/avatar/ph_123456784321_7a24.png']
+2025-08-23 21:56:27,557 - INFO - ROLLBACK
+2025-08-23 21:56:27,570 - INFO - 用户 7 加入群聊 group_huPpqMWJ
+2025-08-23 21:56:40,628 - INFO - 用户 7 断开连接
+2025-08-23 21:56:40,640 - INFO - 用户 7 离开群聊 group_LoVNSEGt
+2025-08-23 21:56:40,642 - INFO - 用户 7 离开群聊 group_afjYz4mD
+2025-08-23 21:56:40,654 - INFO - 用户 7 离开群聊 group_LoVNSEGt
+2025-08-23 21:56:40,661 - INFO - 用户 7 断开连接
+2025-08-23 21:56:40,662 - INFO - 用户 7 断开连接
+2025-08-23 21:56:40,667 - INFO - 用户 7 离开群聊 group_huPpqMWJ

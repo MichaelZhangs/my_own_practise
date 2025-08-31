@@ -12,6 +12,7 @@ from utils.mysql_crud import UserCRUD
 from sqlmodel import Session
 import random
 import json
+from utils.get_current_user import get_current_user_id
 
 router = APIRouter()
 
@@ -44,12 +45,21 @@ def create_access_token(data: dict, expires_minutes: int) -> str:
     """
     to_encode = data.copy()
     expire = datetime.utcnow() + timedelta(minutes=expires_minutes)
-    to_encode.update({"exp": expire})
-    return jwt.encode(
+    log_info(f"创建token - 使用的SECRET_KEY:{settings.SECRET_KEY}")
+    log_info(f"创建token - 使用的ALGORITHM:{settings.ALGORITHM}")
+
+
+    to_encode.update({"exp": expire, "iat": datetime.utcnow()})
+
+    log_info(f"创建token - 数据内容: {to_encode}")
+
+    encoded_jwt = jwt.encode(
         to_encode,
         settings.SECRET_KEY,
         algorithm=settings.ALGORITHM
     )
+    log_info(f"生成的token前20位: {encoded_jwt[:20]}...")
+    return encoded_jwt
 
 
 @router.post("/register", response_model=UserRegisterDict)
@@ -118,6 +128,19 @@ async def send_code(request: SendCodeRequest):
     return {"code": code}
 
 
+@router.post("/refresh")
+async def refresh_token(current_user: int = Depends(get_current_user_id)):
+    """刷新token"""
+    new_access_token = create_access_token(
+        data={"sub": current_user},
+        expires_minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES
+    )
+    log_info(f"{new_access_token}")
+    return {
+        "access_token": new_access_token,
+        "token_type": "bearer"
+    }
+
 @router.post("/login", response_model=Token)
 async def login(
         request: LoginRequest,
@@ -133,6 +156,7 @@ async def login(
 
         # 检查用户是否存在
         user = crud.get_user_by_phone(request.phone)
+        log_info(f"user: {user}")
         # print(f"user: {user.username}, {user.phone}")
         if not user:
             # 自动注册
@@ -144,7 +168,7 @@ async def login(
 
         # 生成令牌 - 直接传递分钟数
         access_token = create_access_token(
-            data={"sub": user.username},
+            data={"sub": user.id},
             expires_minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES
         )
 
