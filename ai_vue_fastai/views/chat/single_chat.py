@@ -296,7 +296,7 @@ async def upload_media(file: UploadFile = File(...)):
                 file_size += len(content)
 
         # 构造访问URL
-        media_url = f"/{settings.ARTICLE_MEDIA}/{sub_dir}/{file_name}"
+        media_url = f"/{settings.CHAT_MEDIA}/{sub_dir}/{file_name}"
 
         # 获取文件类型（简化分类）
         if 'image' in file.content_type:
