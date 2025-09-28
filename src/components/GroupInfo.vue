@@ -81,6 +81,17 @@
           <i class="fa-solid" :class="isMuted ? 'fa-bell' : 'fa-bell-slash'"></i> 
           {{ isMuted ? '开启通知' : '消息免打扰' }}
         </div>
+
+        <!-- 群主转让按钮 - 只有群主可见 -->
+        <div 
+          class="group-action-btn transfer-action" 
+          @click="showTransferDialog"
+          v-if="isGroupOwner"
+        >
+          <i class="fa-solid fa-crown"></i> 
+          转让群主
+        </div>
+
         <div 
           class="group-action-btn danger-action" 
           @click="isGroupOwner ? dismissGroup() : exitGroup()"
@@ -182,8 +193,88 @@
         </div>
       </div>
     </div>
+
+    <!-- 群主转让弹窗 -->
+    <div v-if="showTransfer" class="transfer-dialog">
+      <div class="transfer-content">
+        <div class="transfer-header">
+          <div class="transfer-title">转让群主身份</div>
+          <div class="transfer-close" @click="closeTransferDialog">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        
+        <div class="transfer-warning">
+          <i class="fa-solid fa-exclamation-triangle"></i>
+          <p>转让后您将失去群主身份，无法撤销此操作</p>
+        </div>
+        
+        <div class="transfer-search">
+          <input 
+            type="text" 
+            v-model="transferSearchKeyword" 
+            placeholder="搜索群成员..."
+            class="transfer-search-input"
+            @input="handleTransferSearch"
+          >
+        </div>
+        
+        <div class="transfer-members-list" ref="transferListRef">
+          <div 
+            v-for="member in filteredTransferMembers" 
+            :key="getMemberKey(member)" 
+            class="transfer-member-item"
+            @click="selectTransferMember(member)"
+            :class="{ 
+              'selected': isTransferMemberSelected(member),
+              'transfer-member-item-disabled': isCurrentUser(member)
+            }"
+          >
+            <div class="transfer-member-avatar">
+              <img :src="getMemberAvatar(member)" alt="成员头像" @error="handleAvatarError">
+            </div>
+            <div class="transfer-member-info">
+              <div class="transfer-member-name">{{ getMemberName(member) }}</div>
+              <div class="transfer-member-role">{{ getMemberRole(member) }}</div>
+            </div>
+            <div class="transfer-member-select">
+              <i 
+                class="fa-solid fa-check" 
+                v-if="isTransferMemberSelected(member)"
+              ></i>
+            </div>
+            <div class="transfer-member-disabled-tag" v-if="isCurrentUser(member)">
+              当前用户
+            </div>
+          </div>
+          
+          <div class="no-transfer-members" v-if="filteredTransferMembers.length === 0 && !transferLoading">
+            {{ transferSearchKeyword ? '未找到匹配的群成员' : '暂无群成员数据' }}
+          </div>
+          
+          <div class="transfer-loading" v-if="transferLoading">
+            <i class="fa-solid fa-spinner fa-spin"></i> 加载中...
+          </div>
+        </div>
+        
+        <div class="transfer-footer">
+          <div class="selected-member-info" v-if="selectedTransferMember">
+            已选择: {{ getMemberName(selectedTransferMember) }}
+          </div>
+          <div class="transfer-buttons">
+            <button class="transfer-cancel" @click="closeTransferDialog">取消</button>
+            <button 
+              class="transfer-confirm" 
+              @click="confirmTransfer"
+              :disabled="!selectedTransferMember"
+            >确认转让</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
 
 <script>
 import { ref, computed, onMounted, watch, nextTick  } from 'vue';
@@ -228,6 +319,12 @@ export default {
     const hoverMemberId = ref(null);
     const userListRef = ref(null); // 添加用户列表的引用
     const systemNotifications = ref([]); 
+
+    const showTransfer = ref(false);
+    const transferSearchKeyword = ref('');
+    const selectedTransferMember = ref(null);
+    const transferMembers = ref([]);
+    const transferDialogRef = ref(null);
     // 分页控制
     const pagination = ref({
       page: 1,
@@ -256,6 +353,157 @@ const formatNotificationTime = (notification) => {
     return '';
   }
 };
+
+// 过滤可转让的成员（排除自己）
+const filteredTransferMembers = computed(() => {
+  let members = transferMembers.value;
+  
+  if (transferSearchKeyword.value) {
+    const keyword = transferSearchKeyword.value.toLowerCase();
+    members = members.filter(member => 
+      getMemberName(member).toLowerCase().includes(keyword)
+    );
+  }
+  
+  return members.filter(member => {
+    const memberId = typeof member === 'number' ? member : member.id;
+    return memberId !== currentUserId.value; // 排除自己
+  });
+});
+
+// 显示转让弹窗
+    // 修改后的showTransferDialog方法
+    const showTransferDialog = async () => {
+      console.log("显示转让弹窗，当前群信息:", props.groupInfo);
+      
+      try {
+        // 直接设置为true
+        showTransfer.value = true;
+        transferSearchKeyword.value = '';
+        selectedTransferMember.value = null;
+        
+        console.log("当前用户ID:", currentUserId.value);
+        
+        // 等待DOM更新
+        await nextTick();
+        
+        // 安全的DOM检查
+        if (transferDialogRef.value) {
+          console.log("弹窗元素已渲染:", transferDialogRef.value);
+          console.log("弹窗显示状态:", window.getComputedStyle(transferDialogRef.value).display);
+        } else {
+          console.log("弹窗元素尚未渲染");
+        }
+        
+        // 加载可转让的成员列表
+        await loadTransferMembers();
+        
+        console.log("转让弹窗状态:", showTransfer.value);
+        console.log("加载到的可转让成员:", transferMembers.value);
+        
+      } catch (error) {
+        console.error("显示转让弹窗时出错:", error);
+      }
+    };
+
+// 关闭转让弹窗
+const closeTransferDialog = () => {
+  showTransfer.value = false;
+};
+
+const loadTransferMembers = async () => {
+  try {
+    // 使用现有的群成员数据，过滤掉自己
+    transferMembers.value = validGroupMembers.value.filter(member => {
+      const memberId = typeof member === 'number' ? member : member.id;
+      return memberId !== currentUserId.value;
+    });
+    console.log("加载到的可转让成员:", transferMembers.value);
+  } catch (error) {
+    console.error('加载转让成员失败:', error);
+    ElMessage.error('加载成员列表失败');
+  }
+};
+// 选择转让成员
+const selectTransferMember = (member) => {
+  selectedTransferMember.value = member;
+};
+console.log("选中的转让成员:", selectedTransferMember.value);
+// 确认转让群主
+const confirmTransfer = async () => {
+  if (!selectedTransferMember.value) {
+    ElMessage.warning('请选择要转让的成员');
+    return;
+  }
+  
+  const memberId = typeof selectedTransferMember.value === 'number' 
+    ? selectedTransferMember.value 
+    : selectedTransferMember.value.id;
+  
+  const memberName = getMemberName(selectedTransferMember.value);
+  
+  try {
+    // 确认对话框
+    await ElMessageBox.confirm(
+      `确定要将群主身份转让给 ${memberName} 吗？此操作不可撤销`,
+      '确认转让',
+      { 
+        type: 'warning',
+        confirmButtonText: '确定转让',
+        cancelButtonText: '取消'
+      }
+    );
+    
+    // 调用转让API
+    const response = await axios.post(
+      `${API_CONFIG.BASE_URL}/group/transfer-ownership`,
+      {
+        group_id: props.groupInfo.group_id,
+        new_owner_id: memberId
+      },
+      { 
+        headers: { 
+          Authorization: `Bearer ${store.state.token}` 
+        },
+        timeout: 10000
+      }
+    );
+    
+    if (response.data.success) {
+      ElMessage.success('群主转让成功');
+      
+      // 发送系统消息
+      await sendSystemMessage(
+        props.groupInfo.group_id,
+        `${store.state.user.username} 将群主身份转让给 ${memberName}`,
+        'transfer_ownership'
+      );
+      
+      // 关闭弹窗
+      closeTransferDialog();
+      
+      // 触发刷新
+      refreshSystemMessages();
+      emit('group-updated');
+      
+      // 关闭群信息面板
+      close();
+      
+    } else {
+      ElMessage.error(response.data.message || '转让失败');
+    }
+  } catch (error) {
+    if (error !== 'cancel') {
+      console.error('转让群主失败:', error);
+      ElMessage.error('转让失败');
+    }
+  }
+};
+
+// 搜索处理
+const handleTransferSearch = _.debounce(() => {
+  // 搜索逻辑已经在filteredTransferMembers计算属性中实现
+}, 300);
 
 
 
@@ -1049,6 +1297,8 @@ const loadSystemNotifications = async () => {
         }
       };
 
+      
+
     watch(() => props.visible, async (newVisible) => {
       console.log("群信息弹窗可见性变化:", newVisible, props.groupInfo);
       if (newVisible && props.groupInfo.group_id) {
@@ -1120,6 +1370,7 @@ const loadSystemNotifications = async () => {
       loadSystemNotifications,
       groupAvatarUrls,
       getFullUrl,
+      transferDialogRef,
       selectedCount,
       pagination,
       hoverMemberId,
@@ -1133,6 +1384,11 @@ const loadSystemNotifications = async () => {
       getMemberKey,
       canRemoveMember,
       close,
+      filteredTransferMembers,
+      showTransferDialog,
+      selectTransferMember,
+      confirmTransfer,
+      handleTransferSearch,
       showEditNameDialog,
       cancelEditName,
       confirmEditName,
@@ -1727,4 +1983,271 @@ const loadSystemNotifications = async () => {
     max-height: 250px;
   }
 }
+
+/* 群主转让弹窗样式 */
+.transfer-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002;
+}
+
+.transfer-content {
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-header {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.transfer-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.transfer-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+}
+
+.transfer-warning {
+  background-color: #fff3e0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e67e22;
+}
+
+.transfer-warning i {
+  font-size: 20px;
+}
+
+.transfer-search {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.transfer-search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.transfer-members-list {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 300px;
+  min-height: 100px; /* 增加最小高度确保即使没有内容也能看到区域 */
+  padding: 10px;
+}
+
+.transfer-member-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  margin-bottom: 8px;
+}
+
+.transfer-member-item:hover {
+  background-color: #f5f5f5;
+}
+
+.transfer-member-item.selected {
+  background-color: #e3f2fd;
+  border: 1px solid #2196f3;
+}
+
+.transfer-member-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.transfer-member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.transfer-member-info {
+  flex: 1;
+}
+
+.transfer-member-name {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.transfer-member-role {
+  font-size: 12px;
+  color: #999;
+}
+
+.transfer-member-select {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.transfer-member-item.selected .transfer-member-select {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.no-transfer-members {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+}
+
+.transfer-buttons {
+  display: flex;
+  padding: 15px;
+  gap: 10px;
+  border-top: 1px solid #eee;
+}
+
+.transfer-cancel,
+.transfer-confirm {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.transfer-cancel {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.transfer-confirm {
+  background-color: #e67e22;
+  color: white;
+}
+
+.transfer-confirm:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 转让按钮样式 */
+.transfer-action {
+  color: #e67e22;
+  background-color: #fff3e0;
+}
+
+.transfer-action:hover {
+  background-color: #ffe0b2;
+}
+
+/* 响应式调整 */
+@media (max-width: 480px) {
+  .transfer-content {
+    width: 95%;
+  }
+  
+  .transfer-members-list {
+    max-height: 250px;
+  }
+}
+
+::v-deep .transfer-dialog {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 9999 !important;
+}
+
+
+/* 确保弹窗内容容器正确显示 */
+.transfer-content {
+  /* 增加明显的边框便于调试 */
+  border: 2px solid #e67e22 !important;
+}
+
+.transfer-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.transfer-content {
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease;
+}
+
+/* 添加关键帧动画 */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(-20px) scale(0.95); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
+
+/* 确保弹窗在打开时可见 */
+.transfer-dialog[style*="display: none"] {
+  display: flex !important;
+}
+
+/* 调试用的高亮边框 */
+.debug-border {
+  border: 2px solid red !important;
+}
+
 </style>

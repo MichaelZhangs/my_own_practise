@@ -14,6 +14,9 @@ import uuid
 from datetime import datetime
 from fastapi.responses import JSONResponse
 from utils.log import log_info
+from utils.get_current_user import get_current_user_id
+
+
 # 初始化MongoDB连接
 mongo = MotorDB(database="article_db")
 # collection 是article
@@ -57,7 +60,7 @@ class LikeMomentRequest(BaseModel):
 
 class MomentResponse(BaseModel):
     id: str
-    user_id: int
+    # user_id: int
     content: str
     media: List[MediaItem]
     stats: Optional[Stats] = None
@@ -513,7 +516,7 @@ async def get_moment_by_id(
 # 获取我喜欢的内容
 @router.get("/liked_moments", response_model=List[DetailMomentResponse])
 async def get_liked_moments(
-        user_id: int = Query(...),  # 新增user_id参数，必需项
+        user_id: int = Depends(get_current_user_id),  # 新增user_id参数，必需项
         last_id: Optional[str] = Query(None),
         limit: int = Query(10, gt=0, le=50),
         session: Session = Depends(get_session)
@@ -591,7 +594,7 @@ async def get_liked_moments(
 # 我发布的
 @router.get("/user_moments", response_model=List[DetailMomentResponse])
 async def get_user_moments(
-        user_id: int = Query(...),  # 新增user_id参数，必需项
+        user_id: int = Depends(get_current_user_id),  # 新增user_id参数，必需项
         last_id: Optional[str] = Query(None),
         limit: int = Query(10, gt=0, le=50),
         session: Session = Depends(get_session)

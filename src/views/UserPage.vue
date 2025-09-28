@@ -391,7 +391,6 @@ const fetchPublishedMoments = async (refresh = false) => {
     if (noMorePublished.value && !refresh) return;
     
     const params = {
-      user_id: user.value.id,
       limit: publishedPageSize
     };
     
@@ -482,7 +481,6 @@ const fetchLikedMoments = async (refresh = false) => {
     if (noMoreLiked.value && !refresh) return;
     
     const params = {
-      user_id: user.value.id,
       limit: likedPageSize
     };
     
